@@ -1,0 +1,103 @@
+Question 0: Basic operating systems
+a) What is the point of an operating system?
+It manages the application and resources from hardware to allocat so it runs effectivly
+b) What is user space?
+Where "normal" programs run and operate
+c) What is kernel space?
+Where hardware specific programs run  
+d) What is a user program?
+Programs that run in User space and are more generalized
+e) What is a software (internal) interrupt?
+A trap that is caused by an error or a user request
+f) What (in Pintos) is the difference between a thread and process?
+A proccess is a program ish and the thread is what is happening or running 
+A process is composed of threads
+
+Question 1: System calls
+a) What is the idea behind system calls?
+A system call let's user space applications access Kernel mode functions
+b) How are system calls made from user space in Pintos? What functions are
+involved in user space?
+You invoke int $0x30 to make the syscall then push addistion arguments to the stack
+c) What function in kernel space is responsible for handling/servicing a system call?
+The syscall_handler
+d) How many system calls are already defined in the Pintos user space?
+21
+e) Why can’t the system calls just be normal functions? Why do they need to
+execute in kernel space?
+Beacause user space does not have access to the proccess that the function wants to do so they need be in kernel mode to do that
+
+Question 2: Interrupts
+Pintos only make use one interrupt ( 0x30 ) for all system calls, so there is only one
+interrupt handler that handles system calls. With that in mind,
+a) How is it possible to distinguish between different system calls made from within
+this handler?
+It's number and addistional agruments are pushed to the stack where it is taken and the number is matched with it's correspondent syscall.
+b) Where are the arguments of a system call stored (if there are any) and how can
+the system call handler access them?
+In the stack that can be accessed with a pointer
+Question 3: Dual mode
+a) Where in memory is the user space stack of a process located? Where is the
+kernel stack located?
+It's in it's correspondent virtual memory, user virtual memory and kernel virtual memory
+b) What is the reason behind having two stacks instead of just one?
+So user mode can't access the kernel stack and to seperate the user and kernel memory
+c) How can the kernel access user space memory? In particular, how is it made
+possible in interrupt handlers?
+A pointer in the syscall_handler
+
+Question 3: Dual mode
+a) Where in memory is the user space stack of a process located? Where is the
+kernel stack located?
+user virtual moemory and kernel virtual memory
+b) What is the reason behind having two stacks instead of just one?
+In order to seperate kernal memory from user memory => user cannot access kernal
+c) How can the kernel access user space memory? In particular, how is it made
+possible in interrupt handlers?
+via a pointer to the stack.
+
+Question 4: Memory concerns
+When a user program makes a system call like open(filename) , an address to a string
+containing the file name is provided as an argument.
+TDDE47/TDDE68 Lab B
+a) In what memory (stack) is this string stored?
+In the user stack
+b) How can the kernel access it? Why?
+Beacause the pointer
+c) Can you think of any potential problems with having the kernel accessing data
+through user space provided pointers?
+Yes, user can input bad data that is then taken to kernel space
+d) In the case of open , user space is also expecting a value back (a return value),
+where would that value be stored so that the user program can access the return
+value?
+In the User space stack
+
+Question 5: File system
+a) What kind of high level file system operations does Pintos already support?
+File creation deletion Open close read write find
+b) How is a file represented in Pintos?
+struct file
+c) What kind of file operations does Pintos already support?
+Open,read,write 
+
+Question 6: File descriptors
+When a user program requests a file to be made ready to work with, they make a call
+to open(filename) , and get back a file id, known as a file descriptor, shortened to fd.
+These file descriptors are then use by the user program to reference a file for example
+when it want to read from it or write to it.
+a) What kind of data type would be a good fit for a file descriptor?
+int
+b) Why do operating systems use file descriptors? Why not just return a pointer to
+the file?
+It allows file descriptors to be unforgeable and access controlled by the kernel
+c) How could the kernel keep track of what file a given file descriptor corresponds
+to, given that file descriptors are per process? How does the kernel keep track
+of the process?
+It has a file table
+d) How do we get access to the current thread?
+thread_current returns current thread
+e) What would be a simple way of creating the file descriptor?
+Store current file descritpor and do +1 after adding a new file
+f) Are there any special file descriptors already defined in Pintos? Which ones in
+that case? What are they used for?
+0,1 standard in and out

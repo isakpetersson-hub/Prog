@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://ur58hfvredrr"]
+
+[ext_resource type="Texture2D" uid="uid://crbsd0f7dn6go" path="res://Textures/Items/moai.png" id="1_hrs7j"]
+[ext_resource type="Script" uid="uid://eouayou685l" path="res://Scripts/Items/defaultUse.gd" id="1_xgvff"]
+[ext_resource type="ArrayMesh" uid="uid://c8amfapapoa8u" path="res://Models/Items/moai.obj" id="2_xgvff"]
+[ext_resource type="Script" uid="uid://cdvygnoh07rcx" path="res://Scripts/item_interact.gd" id="3_4bvix"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_neorq"]
+albedo_texture = ExtResource("1_hrs7j")
+texture_filter = 0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p1ukk"]
+points = PackedVector3Array(-0.110607, -0.012926869, -0.020811383, -0.109502465, -0.017572284, -0.049449172, -0.08959922, -0.0932467, 0.03571944, -0.09739593, 0.03349863, 0.02242016, -0.107964784, 0.14203507, -0.04623961, -0.10911263, 0.03212221, -0.057340078, -0.052261695, -0.051036492, -0.067483, -0.08444474, -0.088228494, -0.030847907, -0.059040494, -0.11403637, 0.044603363, -0.058585685, -0.10795718, 0.08067102, -0.013927922, 0.025584206, 0.11367098, -0.08630729, 0.11284348, 0.0050601587, -0.06008005, 0.16767088, -0.016662005, -0.0944505, 0.15250158, -0.04150507, -0.05917044, 0.17228761, -0.05546045, -0.10595064, 0.14019984, -0.057180487, 0.021806955, -0.06190447, -0.05945023, 0.05825652, -0.083927184, -0.050459918, -0.081477664, 0.11241336, -0.061329864, 0.10546987, 0.13916752, -0.05914878, 0.1087185, 0.014314771, -0.05794298, 0.023669496, -0.116101, 0.06591768, -0.003857188, -0.110566646, 0.10189668, 0.06843555, -0.10881744, 0.029406711, 0.020702422, 0.021913752, 0.107730635, 0.008920737, 0.16807231, -0.0029371455, 0.054379836, 0.17684701, -0.054662492, 0.08554497, -0.08616386, -0.030830175, 0.1097364, -0.01610984, -0.04980382, 0.10822037, 0.14174831, -0.046505596, 0.051109552, -0.10881744, 0.0860794, 0.089898124, -0.093017295, 0.037244424, 0.096893504, 0.03645219, 0.022881202, 0.087082654, 0.11109428, 0.0034110472, 0.078744516, 0.16451657, -0.025740981, 0.11064601, -0.013987854, -0.020687256)
+
+[node name="moai" type="RigidBody3D"]
+collision_layer = 8
+collision_mask = 25
+mass = 5.0
+script = ExtResource("1_xgvff")
+
+[node name="moai_mesh_instance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_neorq")
+mesh = ExtResource("2_xgvff")
+
+[node name="moai_collision3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_p1ukk")
+
+[node name="moai" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("3_4bvix")
+
+[node name="moai_collosion3D" type="CollisionShape3D" parent="moai"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_p1ukk")

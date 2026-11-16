@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Programmering/repos/AdventureGame/Content/32x32_map_tile v3.1 [MARGINLESS].png</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/groundinfo.png</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/MenuFont.spritefont</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/overworld.mp3</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/PickItem.wav</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/Player1.png</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/Steps_Grass (1).wav</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/Steps_Sand.wav</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/Steps_ShallowWater.wav</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/Steps_Stone.wav</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/Steps_Wood.wav</File>
+    <File>C:/Programmering/repos/AdventureGame/Content/UnlockAndOpen.wav</File>
+  </SourceFiles>
+  <DestFiles>
+    <File>tilemap32.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File>Steps_Grass.wav</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

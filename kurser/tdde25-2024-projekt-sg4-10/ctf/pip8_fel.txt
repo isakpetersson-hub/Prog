@@ -1,0 +1,69 @@
+/gameobjects.py:153:23: W291 trailing whitespace
+./gameobjects.py:156:58: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:156:60: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:184:86: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:184:88: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:186:29: E231 missing whitespace after ','
+./gameobjects.py:196:1: W293 blank line contains whitespace
+./gameobjects.py:200:55: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:200:57: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:200:73: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:200:75: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:200:89: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:200:91: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:201:62: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:201:64: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:204:17: E231 missing whitespace after ','
+./gameobjects.py:224:88: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:224:90: E251 unexpected spaces around keyword / parameter equals
+./gameobjects.py:301:39: E261 at least two spaces before inline comment
+./gameobjects.py:301:40: E262 inline comment should start with '# '
+./gameobjects.py:308:37: W291 trailing whitespace
+./gameobjects.py:330:1: W293 blank line contains whitespace
+./gameobjects.py:341:70: E231 missing whitespace after ','
+./gameobjects.py:401:1: E302 expected 2 blank lines, found 1
+./gameobjects.py:444:1: E302 expected 2 blank lines, found 1
+./gameobjects.py:446:1: W293 blank line contains whitespace
+./gameobjects.py:450:1: E302 expected 2 blank lines, found 1
+./gameobjects.py:451:1: E101 indentation contains mixed spaces and tabs
+./gameobjects.py:451:1: W191 indentation contains tabs
+./gameobjects.py:452:1: W191 indentation contains tabs
+./gameobjects.py:453:1: W191 indentation contains tabs
+./gameobjects.py:454:1: W191 indentation contains tabs
+./gameobjects.py:455:1: W191 indentation contains tabs
+./gameobjects.py:456:1: W191 indentation contains tabs
+./gameobjects.py:457:1: W191 indentation contains tabs
+./gameobjects.py:458:1: W191 indentation contains tabs
+./gameobjects.py:460:1: W191 indentation contains tabs
+./gameobjects.py:461:1: W191 indentation contains tabs
+./gameobjects.py:462:1: W191 indentation contains tabs
+./gameobjects.py:462:3: E265 block comment should start with '# '
+./gameobjects.py:463:1: W191 indentation contains tabs
+./gameobjects.py:465:1: W191 indentation contains tabs
+./gameobjects.py:466:1: W191 indentation contains tabs
+./gameobjects.py:467:1: W191 indentation contains tabs
+./gameobjects.py:468:1: W191 indentation contains tabs
+./gameobjects.py:470:1: W191 indentation contains tabs
+./gameobjects.py:470:3: E265 block comment should start with '# '
+./gameobjects.py:471:1: W191 indentation contains tabs
+./gameobjects.py:472:1: W191 indentation contains tabs
+./gameobjects.py:473:1: E101 indentation contains mixed spaces and tabs
+./gameobjects.py:473:1: W293 blank line contains whitespace
+./gameobjects.py:474:1: E302 expected 2 blank lines, found 1
+./gameobjects.py:477:14: E225 missing whitespace around operator
+./gameobjects.py:491:1: W391 blank line at end of file
+./ai.py:149:40: E251 unexpected spaces around keyword / parameter equals
+./ai.py:149:42: E251 unexpected spaces around keyword / parameter equals
+./ai.py:154:51: E231 missing whitespace after ','
+./ctf.py:108:22: E262 inline comment should start with '# '
+./ctf.py:109:1: W293 blank line contains whitespace
+./ctf.py:119:1: W293 blank line contains whitespace
+./ctf.py:175:1: W293 blank line contains whitespace
+./ctf.py:176:20: E231 missing whitespace after ','
+./ctf.py:180:14: E231 missing whitespace after ','
+./ctf.py:205:1: E305 expected 2 blank lines after class or function definition, found 0
+./ctf.py:208:11: W292 no newline at end of file
+./sound.py:58:34: E251 unexpected spaces around keyword / parameter equals
+./sound.py:58:36: E251 unexpected spaces around keyword / parameter equals
+./sound.py:58:46: E251 unexpected spaces around keyword / parameter equals
+./sound.py:58:48: E251 unexpected spaces around keyword / parameter equals

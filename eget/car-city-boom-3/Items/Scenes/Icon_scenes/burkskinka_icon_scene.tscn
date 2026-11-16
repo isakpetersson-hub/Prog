@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://clmqf2yv8mhvb"]
+
+[ext_resource type="PackedScene" uid="uid://bvn76k7qo1qgw" path="res://Items/Scenes/burkskinka.tscn" id="1_gt7sl"]
+
+[node name="burkskinka" type="SubViewport"]
+transparent_bg = true
+size = Vector2i(32, 32)
+render_target_update_mode = 4
+
+[node name="@Camera3D@39307" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0055647492, 0.4255261)
+current = true
+fov = 27.4
+
+[node name="burkskinka" parent="." instance=ExtResource("1_gt7sl")]
+transform = Transform3D(-1, 8.742278e-08, 0, 3.821371e-15, 4.371139e-08, -1, -8.742278e-08, -1, -4.371139e-08, 0, 0, 0)

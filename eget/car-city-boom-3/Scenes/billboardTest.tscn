@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dt8c5txtym66t"]
+
+[ext_resource type="Texture2D" uid="uid://chc6fegvkw1pe" path="res://Billboards/city.png" id="1_v6j1d"]
+[ext_resource type="Script" uid="uid://n0q0y2rlw84e" path="res://Scenes/billboard_test.gd" id="2_v6j1d"]
+
+[node name="BillboardTest" type="Sprite3D"]
+texture = ExtResource("1_v6j1d")
+hframes = 16
+frame = 7
+script = ExtResource("2_v6j1d")

@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://cweqab4s7rd8m"]
+
+[ext_resource type="Script" uid="uid://eouayou685l" path="res://Scripts/Items/defaultUse.gd" id="1_g2wt0"]
+[ext_resource type="Texture2D" uid="uid://bwm7c2u0tav37" path="res://Textures/Items/Murklor.png" id="1_rbkbi"]
+[ext_resource type="ArrayMesh" uid="uid://d2waouh2uiovi" path="res://Models/Items/murklor.obj" id="2_g2wt0"]
+[ext_resource type="Script" uid="uid://cdvygnoh07rcx" path="res://Scripts/item_interact.gd" id="3_adpmj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nb4r1"]
+albedo_texture = ExtResource("1_rbkbi")
+texture_filter = 0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ygbip"]
+points = PackedVector3Array(0.047041, 0.040014, 0.02714837, -9.208918e-06, 0.040014, 0.054318, 0.047041, -0.040014, 0.02714837, 0.047041, 0.040014, -0.027169634, -9.208918e-06, -0.040014, 0.054318, -0.047041, 0.040014, 0.02714837, 0.047041, -0.040014, -0.027169634, -9.208918e-06, 0.040014, -0.054318, -0.047041, -0.040014, 0.02714837, -0.047041, 0.040014, -0.027169634, -9.208918e-06, -0.040014, -0.054318, -0.047041, -0.040014, -0.027169634)
+
+[node name="murklor" type="RigidBody3D"]
+collision_layer = 8
+collision_mask = 25
+script = ExtResource("1_g2wt0")
+
+[node name="murklor_mesh_instance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_nb4r1")
+mesh = ExtResource("2_g2wt0")
+
+[node name="murklor_collision3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_ygbip")
+
+[node name="murklor" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("3_adpmj")
+
+[node name="murklor_collosion3D" type="CollisionShape3D" parent="murklor"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_ygbip")

@@ -1,0 +1,26 @@
+# -*- makefile -*-
+
+tests/%.output: FILESYSSOURCE = --filesys-size=4
+tests/%.output: PUTFILES = $(filter-out kernel.bin loader.bin, $^)
+
+tests/dagjo_TESTS = $(addprefix tests/dagjo/,recursor-p check-close)
+
+tests/dagjo_PROGS = $(tests/dagjo_TESTS)  $(addprefix \
+tests/dagjo/,recursor-c no-close)
+
+# check-close
+tests/dagjo/no-close_SRC = tests/dagjo/no-close.c 
+tests/dagjo/check-close_SRC = tests/dagjo/check-close.c tests/main.c
+tests/dagjo/check-close_PUTFILES += tests/dagjo/no-close
+tests/dagjo/check-close.output: FILESYSSOURCE = --filesys-size=2
+
+# recursor_ng
+tests/dagjo/recursor-p_SRC = tests/dagjo/recursor-p.c
+tests/dagjo/recursor-c_SRC = tests/dagjo/recursor-c.c 
+tests/dagjo/recursor-p_PUTFILES += tests/dagjo/recursor-c
+tests/dagjo/recursor-p.output: PINTOSOPTS = --mem=128
+tests/dagjo/recursor-p.output: TIMEOUT = 70
+
+$(foreach prog,$(tests/dagjo_PROGS),$(eval $(prog)_SRC += tests/lib.c))
+
+

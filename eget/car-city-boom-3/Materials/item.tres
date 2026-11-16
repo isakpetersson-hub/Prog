@@ -1,0 +1,4 @@
+[gd_resource type="PhysicsMaterial" format=3 uid="uid://drvn0nlw4p218"]
+
+[resource]
+rough = true

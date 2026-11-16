@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsfnc1gqfwt6n"]
+
+[ext_resource type="Script" uid="uid://cny27k2baof07" path="res://Scripts/shop_manager.gd" id="1_08rkd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4k4g2"]
+size = Vector3(9.65, 2.105, 5.41)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_08rkd"]
+size = Vector3(1.765, 0.485, 0.28)
+
+[node name="TemplateShop" type="Node3D"]
+script = ExtResource("1_08rkd")
+
+[node name="player_detector" type="Area3D" parent="."]
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player_detector"]
+shape = SubResource("BoxShape3D_4k4g2")
+
+[node name="sell_area" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.783884, 0)
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="sell_area"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08585656, 0)
+shape = SubResource("BoxShape3D_08rkd")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(3.105, 1, 1.02)
+
+[connection signal="body_entered" from="player_detector" to="." method="_player_entered"]
+[connection signal="body_exited" from="player_detector" to="." method="_player_exited"]
+[connection signal="body_entered" from="sell_area" to="." method="_item_entered"]

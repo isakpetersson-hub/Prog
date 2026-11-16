@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://bvn76k7qo1qgw"]
+
+[ext_resource type="Texture2D" uid="uid://bajcj85st615m" path="res://Textures/Items/burkskinka.png" id="1_fu2jr"]
+[ext_resource type="Script" uid="uid://eouayou685l" path="res://Scripts/Items/defaultUse.gd" id="1_ns858"]
+[ext_resource type="ArrayMesh" uid="uid://bubwc7iw0iyql" path="res://Models/Items/burkskinka.obj" id="2_ns858"]
+[ext_resource type="Script" uid="uid://cdvygnoh07rcx" path="res://Scripts/item_interact.gd" id="3_1mi25"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wlwmx"]
+albedo_texture = ExtResource("1_fu2jr")
+texture_filter = 0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wgxbh"]
+points = PackedVector3Array(0.068374, 0.020203, 0.03451083, 0.068374, -0.020203, 0.03451083, 0.06102527, 0.020203, -0.021471798, 0.05800011, 0.020203, 0.083653785, 0.05800011, -0.020203, 0.083653785, 0.06102527, -0.020203, -0.021471798, 0.040986918, 0.020203, -0.06443521, 0.04236564, 0.020203, 0.09841501, 0.04236564, -0.020203, 0.09841501, 0.040986918, -0.020203, -0.06443521, 0.013613224, 0.020203, -0.08625615, -0.04237903, 0.020203, 0.09841501, -0.04237903, -0.020203, 0.09841501, 0.013613224, -0.020203, -0.08625615, -1.3388693e-05, 0.020203, -0.088915, -0.05801349, 0.020203, 0.083653785, -0.05801349, -0.020203, 0.083653785, -1.3388693e-05, -0.020203, -0.088915, -0.013639998, 0.020203, -0.08625615, -0.068374, 0.020203, 0.03451083, -0.068374, -0.020203, 0.03451083, -0.013639998, -0.020203, -0.08625615, -0.041000307, 0.020203, -0.06443521, -0.061038654, 0.020203, -0.021471798, -0.061038654, -0.020203, -0.021471798, -0.041000307, -0.020203, -0.06443521)
+
+[node name="burkskinka" type="RigidBody3D"]
+collision_layer = 8
+collision_mask = 25
+script = ExtResource("1_ns858")
+
+[node name="burkskinka_mesh_instance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_wlwmx")
+mesh = ExtResource("2_ns858")
+
+[node name="burkskinka_collision3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_wgxbh")
+
+[node name="burkskinka" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("3_1mi25")
+
+[node name="burkskinka_collosion3D" type="CollisionShape3D" parent="burkskinka"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_wgxbh")

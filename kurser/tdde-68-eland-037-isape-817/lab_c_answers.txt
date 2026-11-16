@@ -1,0 +1,139 @@
+Question 0: Basic concurrency
+a) What is the main idea behind concurrency?
+To be able to run multiple tasks in "parallell" by splitting the processers task on all the tasks
+b) What is one of the main problems with concurrency?
+You have to keep track of all the different tasks and their current execution status
+c) What is synchronization? When is it important to use?
+Safely handling how the processess access the memory. When writing to a file.
+d) What tools do you have available in Pintos to achieve concurrency?
+The scheduler
+e) How many CPU cores are available in Pintos?
+one.
+f) What threading model does Pintos utilize?
+One-to-One 
+Question 1: Process creation
+The following questions should be answered in the context of Pintos, and should help
+orient you for the assignments.
+a) What functions are involved when a new process is started? What are their
+responsibilities?
+process_execute and process_activate and start_process
+b) How do these functions communicate between each other? Is there any shared
+data?
+current  thread
+c) How many threads are involved in creating a new process?
+1
+d) During the process creation, What functions run on which thread? (parent or
+child thread)
+IDK 
+e) How would a parent know if the child started correctly?
+It doesn’t
+f) If the previous answer was “It doesn’t” or similar: What changes would be
+needed to make it possible for the parent to know the status of the child startup?
+That it returns some value
+g) If the new process was started correctly, what is the expected return value of
+process_execute() ?
+The proccess_id
+h) Is there a difference between pid_t and tid_t ? What in that case?
+Tip: Take a sneak peek at Figure 1.
+The pid_t starts when the proccess is created and the tid_t starts when the thread is made
+Question 2: Semaphores
+a) What operations can you use to manipulate a semaphore? What do they mean?
+Sema up and down
+b) Is it a good idea to look at the internal values of a semaphore? Why/why not?
+Yes to see if there are free resources
+c) What happens when a thread calls sema_down() on a semaphore that currently
+has an internal value of 0?
+They are put in the wait queue
+d) What happens when a thread calls sema_down() on a semaphore that currently
+has an internal value of 1?
+The value is set to 0 and the resources are allocated
+e) What happens when a thread calls sema_up() on a semaphore that currently
+has an internal value of 0?
+A free resources is available and the queue is checked for ny proccess
+f) Can you think of a use case for the previous answers in the context of your
+answers for Question 1?
+If we are trying to create a child and no resources are available then it will be queued
+At this stage you should be ready to create a solution for Assignment A.
+Question 3: Process termination
+This and below prep question can be saved until you start working on Assignment B.
+a) What functions are involved in terminating a process?
+porcess_exit, thread_exit and process_cleanup
+b) What is the exit status used for? When should it be −1? When can it be any other
+value?
+To know what happend, -1 is fail the others are succesess
+c) What process is interested in another process’ exit status? What process should
+be able to read the exit status of another process?
+The parent proccess
+d) When will the exit status be available?
+When the proccess is done
+e) Where should the exit status stored? Why?
+t->pi->exit_status
+Tip: You can take a peek at Figure 2 if you get stuck, it might help.
+Question 4: Process waiting
+a) What do we mean when we say “The parent is waiting on the child”? What is it
+waiting for?
+The exit status
+b) What processes can a process wait on? Any? A specific set?
+Any that return an exit_status
+c) Is a parent process required to wait on all of its children?
+no
+d) Is there a function already defined that “waits” on a process? Are there any
+issues with it? If so what?
+Sleep can "wait" but you need to know the amout of time to wait before
+e) Is the above function called anywhere?
+process_execute
+f) Does a parent have to wait for each of its children to exit before terminating?
+yes or a child proccess could not be done
+Question 5: Locks
+a) What operations can you use to manipulate a lock?
+lock_release,lock_acquire
+b) Is it a good idea to look at the internal values of a lock? Why/why not?
+Yes to know is a file is locked or not
+c) What happens when a thread calls lock_acquire() on a lock that is already held
+by another thread?
+It will sleep and wait or return false depending if it's a intrupt or not
+d) What happens when a thread calls lock_release() on a lock that is already held
+by another thread?
+Nothing you can't release a lock held by another thread
+e) What is the difference between a lock and a binary semaphore? Why do we even
+have locks?
+You have a holder that makes debugg easier and that the only proccess that can release is the one that locked it
+Question 6: Lists
+In Pintos we have some already defined data structures, in this question we are
+interested in the linked list declared and defined in lib/kernel/list.[h,c] . The files
+contains a lot of comments that explains pretty much everything you need to know.
+You are not expected to understand it completely, but knowing how you can use, and
+read about, it is important.
+a) What operations does the list implement?
+/* List insertion. */
+void list_insert(struct list_elem *, struct list_elem *);
+void list_splice(struct list_elem *before, struct list_elem *first, struct list_elem *last);
+void list_push_front(struct list *, struct list_elem *);
+void list_push_back(struct list *, struct list_elem *);
+
+/* List removal. */
+struct list_elem *list_remove(struct list_elem *);
+struct list_elem *list_pop_front(struct list *);
+struct list_elem *list_pop_back(struct list *);
+
+/* List elements. */
+struct list_elem *list_front(struct list *);
+struct list_elem *list_back(struct list *);
+
+/* List properties. */
+size_t list_size(struct list *);
+bool list_empty(struct list *);
+
+/* Miscellaneous. */
+void list_reverse(struct list *);
+b) What struct is actually “stored” in the list? What struct is responsible for the links
+between the nodes?
+list_elem
+c) How is it possible for the list to store any data type?
+The list_elem does not care what it is only that another list_elem is before and after
+d) How do you get the stored data type back out of the list? Give an example.
+Loop through 
+e) How can you iterate through a list? Are there any pitfalls when doing so that you
+should be aware of? (Hint: What happens if we are removing elements while
+iterating through the list?)
+The list_elem need a previos node and if it is removed bad stuff

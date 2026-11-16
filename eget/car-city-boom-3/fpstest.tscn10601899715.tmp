@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://cffh6sqw1nawf"]
+
+[ext_resource type="Material" uid="uid://bmb0xrd211ot5" path="res://Materials/dark.tres" id="1_8vt1j"]
+[ext_resource type="Script" uid="uid://bf4rjkifnignx" path="res://character_body_3d.gd" id="2_ckpvd"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_444dy"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x1jmm"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 0.1, 0, 0, 0, 10, 0, 0, 0)
+material_override = ExtResource("1_8vt1j")
+use_collision = true
+
+[node name="Robert" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.475687, 0)
+script = ExtResource("2_ckpvd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Robert"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_444dy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Robert"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_x1jmm")
+
+[node name="Neck" type="Node3D" parent="Robert"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.461173, 0)
+
+[node name="Head" type="Node3D" parent="Robert/Neck"]
+
+[node name="Camera3D" type="Camera3D" parent="Robert/Neck/Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44165134, -0.1061421)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.4328411, 0.90147024, 0, -0.90147024, -0.4328411, 0, 6.6511946, 0)

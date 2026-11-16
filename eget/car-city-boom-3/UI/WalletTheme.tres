@@ -1,0 +1,58 @@
+[gd_resource type="Theme" load_steps=12 format=3 uid="uid://dgcsldd56it8u"]
+
+[ext_resource type="FontFile" uid="uid://naiu55lxjn1o" path="res://UI/aseprite-mini.otf" id="1_3qxt3"]
+[ext_resource type="Texture2D" uid="uid://elsnentx58pl" path="res://UI/sliderNormal.png" id="1_rnxyl"]
+[ext_resource type="Texture2D" uid="uid://ckju1js7abqyk" path="res://UI/sliderActive.png" id="2_5fxid"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_utk86"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_utk86"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3qxt3"]
+bg_color = Color(1, 1, 1, 0.0627451)
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rnxyl"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rnxyl"]
+texture = ExtResource("1_rnxyl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5fxid"]
+texture = ExtResource("1_rnxyl")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ov3kj"]
+draw_center = false
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3qxt3"]
+
+[resource]
+default_font = ExtResource("1_3qxt3")
+default_font_size = 5
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/constants/h_separation = 0
+Button/font_sizes/font_size = 5
+Button/styles/focus = SubResource("StyleBoxEmpty_utk86")
+Button/styles/hover = SubResource("StyleBoxFlat_utk86")
+Button/styles/normal = SubResource("StyleBoxFlat_3qxt3")
+Button/styles/pressed = SubResource("StyleBoxFlat_rnxyl")
+GridContainer/constants/h_separation = 1
+GridContainer/constants/v_separation = 1
+HBoxContainer/constants/separation = 1
+HSlider/icons/grabber = ExtResource("1_rnxyl")
+HSlider/icons/grabber_disabled = null
+HSlider/icons/grabber_highlight = ExtResource("2_5fxid")
+HSlider/styles/grabber_area = SubResource("StyleBoxTexture_rnxyl")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxTexture_5fxid")
+HSlider/styles/slider = SubResource("StyleBoxFlat_ov3kj")
+LineEdit/colors/font_color = Color(1, 1, 1, 1)
+LineEdit/icons/clear = null
+LineEdit/styles/normal = SubResource("StyleBoxEmpty_3qxt3")

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cjex3ryij76o1"]
+
+[ext_resource type="Texture2D" uid="uid://iwi8fvk7lyrh" path="res://Textures/car3.png" id="1_tmnqt"]
+
+[resource]
+albedo_texture = ExtResource("1_tmnqt")
+metallic = 1.0
+anisotropy = 1.0
+refraction_scale = 0.01
+texture_filter = 0
+grow_amount = 0.33

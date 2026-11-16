@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c1hnhkptwhqa4"]
+
+[ext_resource type="FontFile" uid="uid://bk6ea2oajxib4" path="res://UI/Neuropolitical Rg.otf" id="1_4wkb3"]
+
+[resource]
+default_font = ExtResource("1_4wkb3")

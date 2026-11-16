@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://ygb0ftlkd6nm"]
+
+[ext_resource type="PackedScene" uid="uid://ur58hfvredrr" path="res://Items/Scenes/moai.tscn" id="1_kidlp"]
+
+[node name="moai" type="SubViewport"]
+transparent_bg = true
+size = Vector2i(32, 32)
+render_target_update_mode = 4
+
+[node name="@Camera3D@38259" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.018447757, 0.64683187)
+current = true
+fov = 27.4
+
+[node name="moai" parent="." instance=ExtResource("1_kidlp")]

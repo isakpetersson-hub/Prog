@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://ciy32qngpf2rj"]
+
+[ext_resource type="PackedScene" uid="uid://bihg1l5cea3ur" path="res://Items/Scenes/lucky_charms.tscn" id="1_ocoks"]
+
+[node name="lucky_charms" type="SubViewport"]
+transparent_bg = true
+size = Vector2i(32, 32)
+render_target_update_mode = 4
+
+[node name="@Camera3D@37793" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.6419995)
+current = true
+fov = 27.4
+
+[node name="lucky_charms" parent="." instance=ExtResource("1_ocoks")]

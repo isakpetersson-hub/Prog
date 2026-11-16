@@ -1,0 +1,8 @@
+test_normal på både pixel och generator valde jag för att se till att den fungerar med förväntade värden.
+Out_out_bound valde jag för att se till exeptions fungerar och att se till att den kan hanter om fel värde inputas
+not_integer valde jag av samma anldening för att se till att den kan hanter om man skickar in fel värden
+Tuple_lenght valde jag för att se till att exceptionen i koden för att se till att inputet för en tuple av lenght 3 fungerar
+constraint_mixed valde jag för att se till atr om man vänder på inout värden så retunerar den rätt felmeddelande
+negativ_num valde jag för att se till att den kan hantera negativa nummer
+normal_img valde jag för att se till att det fungera och att testa övergången med olika värden så mjuk i detta fall
+wrong_input valde jag för att se till att combine img kan hantera inputs av fel värde

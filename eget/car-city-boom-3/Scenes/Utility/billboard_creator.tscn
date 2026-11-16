@@ -1,0 +1,91 @@
+[gd_scene load_steps=4 format=3 uid="uid://c73r4mrukfv08"]
+
+[ext_resource type="Script" uid="uid://2ftjbcwmc5xi" path="res://Scripts/billboard_creator.gd" id="1_jyyud"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_jyyud"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="Environment" id="Environment_jyyud"]
+ambient_light_color = Color(0.15127608, 0.15127608, 0.15127608, 1)
+
+[node name="bilboard_creator" type="Node3D"]
+script = ExtResource("1_jyyud")
+
+[node name="margin" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="container" type="VBoxContainer" parent="margin"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="id" type="Label" parent="margin/container"]
+layout_mode = 2
+text = "id:"
+
+[node name="id_input" type="LineEdit" parent="margin/container"]
+layout_mode = 2
+placeholder_text = "id"
+
+[node name="scene_path" type="Label" parent="margin/container"]
+layout_mode = 2
+text = "none"
+
+[node name="load" type="Button" parent="margin/container"]
+layout_mode = 2
+text = "Load
+"
+
+[node name="generate" type="Button" parent="margin/container"]
+layout_mode = 2
+text = "Generate"
+
+[node name="FileDialog" type="FileDialog" parent="margin/container"]
+oversampling_override = 1.0
+title = "Open File(s)"
+file_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="margin"]
+custom_minimum_size = Vector2(520, 520)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.089825906, 0.112430796, 0.13659467, 1)
+
+[node name="TextureRect" type="TextureRect" parent="margin"]
+custom_minimum_size = Vector2(512, 512)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("ViewportTexture_jyyud")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+physics_interpolation_mode = 2
+transparent_bg = true
+size = Vector2i(256, 256)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport"]
+physics_interpolation_mode = 2
+fov = 30.0
+
+[node name="lightHolder" type="Node3D" parent="SubViewport"]
+physics_interpolation_mode = 2
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport/lightHolder"]
+physics_interpolation_mode = 2
+transform = Transform3D(0.877163, 2.6141494e-08, -0.48019278, 0.4463052, 0.3690006, 0.8152608, 0.17719147, -0.9294292, 0.3236737, 1.4265301, 6.5960383, 2.6187494)
+shadow_enabled = true
+directional_shadow_blend_splits = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport"]
+physics_interpolation_mode = 2
+environment = SubResource("Environment_jyyud")

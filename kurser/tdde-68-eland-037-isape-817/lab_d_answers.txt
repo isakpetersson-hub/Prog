@@ -1,0 +1,90 @@
+Question 0: Memory concerns
+a) What specific address is the start of kernel space? Is it defined by a name?
+    It starts at position PHYSBASE
+b) What specific address is the end of user space? Where does it start?
+    It ends at position PHYSBASE
+c) Why are you not allowed to dereference NULL ? What address does NULL
+“point” to?
+    It points to #ccccccccc, you can't dereference it because it's reserved and not valid userdata
+d) Where should pointers coming from a user space program point to? Where
+should they absolutely not point to?
+    It should point to userspace and NOT to kernel space
+e) What could go wrong if we allowed user programs to pass invalid pointers to the
+system call handler?
+    It crashes and if it points to kernel space you could have securty issuss
+Question 1: Memory paging
+a) How many levels of paging does Pintos utilize?
+    4 levels
+b) What is a page in the context of memory?
+    A "group" of memory from the logical memory allocated together in the virtual memory
+c) What is a memory frame? How does it relate to pages?
+    The place the page is allocated
+d) How is a virtual address translated into a physical address?
+    The page table
+e) How large is a single page in Pintos?
+    2^n
+f) How can you check what page a given address belongs in?
+    The page table
+g) What is a page table? How is it represented in Pintos?
+    A look-up table with page number and memory spot
+h) Where is the current thread’s page table stored?
+    In the thread struct
+i) How can you check if a given address is mapped to a page belonging to the
+current thread?
+    With page_dir_get page, it return NULl when not mapped.
+j) If you know that a specific address is mapped to the current thread, what do you
+know about the page that the address is in?
+    It is used the thread
+k) How many addresses in a page do you need to validate to know that the whole
+page is valid?
+    First and last
+Question 2: Pointer validation
+a) How many pointers originate from the user program in the system call write() ?
+What type of data do they point to?
+    4, int, int, void pointer and unsigned
+b) How many pointers originate from the user program in the system call open() ?
+What type of data do they point to?
+    2, int, char const
+c) Can the user program modify the stack pointer?
+    No
+d) What criteria need to be fulfilled for a buffer to be valid?
+    That the entire buffer is within the memory
+e) What criteria need to be fulfilled for a string to be valid? (CStrings)
+    Chars that follow each other and end with a NULL
+f) Write down what pointers each system call take as argument, and also what type
+of validation need to be done for the given pointer. (buffer or string)
+    The whole stack and alla buffers and strings
+g) What should the kernel do if a pointer from user space fails validation?
+    exit_status = -1
+By now you should have all the knowledge you need to create a solution for Assign-
+ment A.
+Question 3: File system
+a) Give a short description of what responsibility the below structures within the
+Pintos file system has:
+• filesys is a manager for all the files. It opens, closes files etc.
+• free-map. Utilities for modifying the file system’s free block map.
+• directory, manages the directory structure
+• file performes file reads and writes by reading and writing to disk sector.
+• inode virtual representation of the physical memory
+
+b) What functions are involved when creating/removing a file?
+bool filesys_create(char const *name, off_t initial_size); and bool filesys_remove(char const *name);
+c) What functions are involved when opening/closing a file?
+struct file *file_open(struct inode *); void file_close(struct file *);
+d) What functions are involved when reading/writing a file?
+off_t file_read(struct file *, void *, off_t);
+off_t file_read_at(struct file *, void *, off_t size, off_t start);
+off_t file_write(struct file *, void const *, off_t);
+off_t file_write_at(struct file *, void const *, off_t size, off_t start);
+e) Go through questions b-d, and write down what shared state exist between
+these functions.
+create/remove: the directory?
+open/close: struct file and inode.
+write/read: file struct
+f) How many dir structs are created when we open 5 separate files?
+5
+g) Describe, in your own words, what the reader-writer problem is.
+Concurrency issues where readers and writers try to access the same file.
+h) What functions and structures would be of interest if you were to implement a
+solution to the reader-writer problem in the Pintos file system?
+locks.

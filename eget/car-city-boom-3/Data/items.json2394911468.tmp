@@ -1,0 +1,316 @@
+{
+	"beer": {
+		"grip": 0.42,
+		"grip_pos": {
+			"x": -0.0150000000000001,
+			"y": 0.0,
+			"z": -0.00499999999999989
+		},
+		"grip_rot": {
+			"x": -0.28,
+			"y": 0.37,
+			"z": 0.105
+		},
+		"hold_anim": "drink",
+		"icon": "beer.png",
+		"id": "beer",
+		"name": "beer",
+		"rmb_anim": "enabled",
+		"scene": "beer.tscn",
+		"stats": {
+			"jump": 1.0,
+			"speed": 1.0
+		},
+		"type": "consume",
+		"use_anim": "enabled",
+		"value": 20.0,
+		"weight": 0.5
+	},
+	"burkskinka": {
+		"grip": 0.36,
+		"grip_pos": {
+			"x": -0.03,
+			"y": 0.0299999999999998,
+			"z": 0.02
+		},
+		"grip_rot": {
+			"x": 1.955,
+			"y": -1.625,
+			"z": 0.47
+		},
+		"hold_anim": "default",
+		"icon": "burkskinka.png",
+		"id": "burkskinka",
+		"name": "Burkskinka",
+		"rmb_anim": "enabled",
+		"scene": "burkskinka.tscn",
+		"stats": {
+
+		},
+		"type": "consume",
+		"use_anim": "enabled",
+		"value": 30.0,
+		"weight": 1.0
+	},
+	"cola": {
+		"grip": 0.41,
+		"grip_pos": {
+			"x": -0.0249999999999999,
+			"y": 0.0150000000000001,
+			"z": -0.00499999999999989
+		},
+		"grip_rot": {
+			"x": 0.0499999999999998,
+			"y": -0.345,
+			"z": 0.125
+		},
+		"hold_anim": "drink",
+		"icon": "cola.png",
+		"id": "cola",
+		"name": "Cola",
+		"rmb_anim": "enabled",
+		"scene": "cola.tscn",
+		"stats": {
+			"jump": 1.0,
+			"speed": 1.0
+		},
+		"type": "consume",
+		"use_anim": "enabled",
+		"value": 10.0,
+		"weight": 0.5
+	},
+	"gun": {
+		"grip": 0.5,
+		"grip_pos": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"grip_rot": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"hold_anim": "default",
+		"icon": "gun.png",
+		"id": "gun",
+		"name": "Gun",
+		"rmb_anim": "enabled",
+		"scene": "gun.tscn",
+		"stats": {
+			"damage": 1
+		},
+		"type": "gadget",
+		"use_anim": "enabled",
+		"value": 100.0,
+		"weight": 2.0
+	},
+	"icakuriren1": {
+		"grip": 0.56,
+		"grip_pos": {
+			"x": -0.02,
+			"y": 0.0600000000000001,
+			"z": 0.0750000000000002
+		},
+		"grip_rot": {
+			"x": 1.24,
+			"y": 1.495,
+			"z": 0.0
+		},
+		"hold_anim": "default",
+		"icon": "icakuriren1.png",
+		"id": "icakuriren1",
+		"name": "ICA Kuriren (1)",
+		"rmb_anim": "enabled",
+		"sats": {
+
+		},
+		"scene": "icakuriren1.tscn",
+		"type": "relic",
+		"use_anim": "enabled",
+		"value": 20.0,
+		"weight": 0.5
+	},
+	"icakuriren2": {
+		"grip": 0.5,
+		"grip_pos": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"grip_rot": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"hold_anim": "default",
+		"icon": "icakuriren2.png",
+		"id": "icakuriren2",
+		"name": "ICA Kuriren (2)",
+		"rmb_anim": "enabled",
+		"sats": {
+
+		},
+		"scene": "icakuriren2.tscn",
+		"type": "relic",
+		"use_anim": "enabled",
+		"value": 20.0,
+		"weight": 0.5
+	},
+	"icakuriren3": {
+		"grip": 0.5,
+		"grip_pos": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"grip_rot": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"hold_anim": "default",
+		"icon": "icakuriren3.png",
+		"id": "icakuriren3",
+		"name": "ICA Kuriren (3)",
+		"rmb_anim": "enabled",
+		"sats": {
+
+		},
+		"scene": "icakuriren3.tscn",
+		"type": "relic",
+		"use_anim": "enabled",
+		"value": 20.0,
+		"weight": 0.5
+	},
+	"icakuriren4": {
+		"grip": 0.5,
+		"grip_pos": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"grip_rot": {
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"hold_anim": "default",
+		"icon": "icakuriren4.png",
+		"id": "icakuriren4",
+		"name": "ICA Kuriren (4)",
+		"rmb_anim": "enabled",
+		"sats": {
+
+		},
+		"scene": "icakuriren4.tscn",
+		"type": "relic",
+		"use_anim": "enabled",
+		"value": 20.0,
+		"weight": 0.5
+	},
+	"lucky_charms": {
+		"grip": 0.24,
+		"grip_pos": {
+			"x": -0.075,
+			"y": 0.0550000000000002,
+			"z": 0.0800000000000001
+		},
+		"grip_rot": {
+			"x": -0.375,
+			"y": 1.235,
+			"z": 0.0
+		},
+		"hold_anim": "default",
+		"icon": "lucky_charms.png",
+		"id": "lucky_charms",
+		"name": "Lucky Charms",
+		"rmb_anim": "enabled",
+		"scene": "lucky_charms.tscn",
+		"stats": {
+
+		},
+		"type": "consume",
+		"use_anim": "enabled",
+		"value": 10.0,
+		"weight": 1.0
+	},
+	"moai": {
+		"grip": 0.42,
+		"grip_pos": {
+			"x": -0.0649999999999999,
+			"y": -0.01,
+			"z": 0.02
+		},
+		"grip_rot": {
+			"x": -0.36,
+			"y": 0.565,
+			"z": 0.195
+		},
+		"hold_anim": "default",
+		"icon": "moai.png",
+		"id": "moai",
+		"name": "Moai Statue",
+		"rmb_anim": "enabled",
+		"scene": "moai.tscn",
+		"stats": {
+
+		},
+		"type": "relic",
+		"use_anim": "enabled",
+		"value": 40.0,
+		"weight": 5.0
+	},
+	"murklor": {
+		"grip": 0.42,
+		"grip_pos": {
+			"x": 0.0150000000000001,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"grip_rot": {
+			"x": 0.15,
+			"y": 0.175,
+			"z": -0.0449999999999999
+		},
+		"hold_anim": "default",
+		"icon": "murklor.png",
+		"id": "murklor",
+		"name": "Murklor",
+		"rmb_anim": "enabled",
+		"scene": "murklor.tscn",
+		"stats": {
+
+		},
+		"type": "consume",
+		"use_anim": "enabled",
+		"value": 30.0,
+		"weight": 1.0
+	},
+	"zingo": {
+		"grip": 0.44,
+		"grip_pos": {
+			"x": -0.02,
+			"y": 0.0150000000000001,
+			"z": -0.00499999999999989
+		},
+		"grip_rot": {
+			"x": 0.0,
+			"y": -0.345,
+			"z": 0.0
+		},
+		"hold_anim": "drink",
+		"icon": "zingo.png",
+		"id": "zingo",
+		"name": "Zingo",
+		"rmb_anim": "enabled",
+		"sats": {
+			"heal": 10.0
+		},
+		"scene": "zingo.tscn",
+		"type": "consume",
+		"use_anim": "enabled",
+		"value": 5.0,
+		"weight": 0.5
+	}
+}

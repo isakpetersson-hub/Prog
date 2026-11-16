@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://dw171lnjfjeno"]
+
+[ext_resource type="Texture2D" uid="uid://cmtgsw3mitdkn" path="res://Textures/Items/gränges.png" id="1_ivdr3"]
+[ext_resource type="Script" uid="uid://eouayou685l" path="res://Scripts/Items/defaultUse.gd" id="1_yh0db"]
+[ext_resource type="ArrayMesh" uid="uid://d3p6ufwcclkv3" path="res://Models/Items/beer.obj" id="2_yh0db"]
+[ext_resource type="Script" uid="uid://cdvygnoh07rcx" path="res://Scripts/item_interact.gd" id="3_boehj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ivdr3"]
+albedo_texture = ExtResource("1_ivdr3")
+texture_filter = 0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yh0db"]
+points = PackedVector3Array(-0.034057, -0.06313788, 0.0003718976, -0.02923648, -0.07325, -5.80959e-06, -0.014621574, -0.07325, 0.025312215, -0.016708465, -0.06313788, 0.029682, -0.034057, 0.043356918, 0.0003718976, -0.017355202, -0.06313788, -0.029310104, -0.014621574, -0.07325, -0.025318025, 0.014614906, -0.07325, 0.025312215, 0.017348535, -0.06313788, 0.029304292, -0.016708465, 0.043356918, 0.029682, -0.017355202, 0.043356918, -0.029310104, -0.008527584, 0.16919664, 0.014039099, -0.016428435, 0.16919664, -0.00036608428, 0.016701799, -0.06313788, -0.029682, 0.014614906, -0.07325, -0.025318025, 0.029229812, -0.07325, -5.80959e-06, 0.034057, -0.06313788, -0.00037770718, 0.017348535, 0.043356918, 0.029304292, 0.007894184, 0.16919664, 0.014399372, 0.016701799, 0.043356918, -0.029682, -0.007900851, 0.16919664, -0.014405183, 0.00665405, 0.17557168, 0.012446918, -0.007460803, 0.17557168, 0.0119878575, -0.014114853, 0.17557168, -0.00046486966, 0.034057, 0.043356918, -0.00037770718, 0.016421769, 0.16919664, 0.00036027655, 0.014108185, 0.17557168, 0.00045906007, 0.008520916, 0.16919664, -0.014044909, -0.0066607166, 0.17557168, -0.012452725, -6.6682696e-06, 0.17628002, -5.80959e-06, 0.0074474663, 0.17557168, -0.011993665)
+
+[node name="beer" type="RigidBody3D"]
+collision_layer = 8
+collision_mask = 25
+mass = 0.5
+script = ExtResource("1_yh0db")
+
+[node name="beer_mesh_instance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_ivdr3")
+mesh = ExtResource("2_yh0db")
+
+[node name="beer_collision3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_yh0db")
+
+[node name="beer" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("3_boehj")
+
+[node name="beer_collosion3D" type="CollisionShape3D" parent="beer"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_yh0db")

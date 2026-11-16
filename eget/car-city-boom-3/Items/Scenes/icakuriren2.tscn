@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3bi26rhyfcqt"]
+
+[ext_resource type="PhysicsMaterial" uid="uid://drvn0nlw4p218" path="res://Materials/item.tres" id="1_plo6n"]
+[ext_resource type="Material" uid="uid://bldxdg052tbc3" path="res://Materials/Items/icakuriren2.tres" id="2_0sxkc"]
+[ext_resource type="ArrayMesh" uid="uid://du8nb2dvx0232" path="res://Models/Items/newspaper.obj" id="2_8w11l"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3fg8t"]
+points = PackedVector3Array(0.103074, 0, 0.147389, 0.103074, -0.00434, 0.147389, 0.103074, 0, -0.147389, -0.103074, 0, 0.147389, -0.103074, -0.00434, 0.147389, 0.103074, -0.00434, -0.147389, -0.103074, 0, -0.147389, -0.103074, -0.00434, -0.147389)
+
+[node name="icakuriren1" type="RigidBody3D"]
+collision_layer = 8
+collision_mask = 25
+mass = 0.309
+physics_material_override = ExtResource("1_plo6n")
+continuous_cd = true
+linear_damp = 0.1
+angular_damp = 0.1
+
+[node name="Newspaper" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_0sxkc")
+mesh = ExtResource("2_8w11l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_3fg8t")

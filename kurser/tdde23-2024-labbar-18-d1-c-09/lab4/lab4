@@ -1,0 +1,49 @@
+import string
+def split_rec(text):
+    if not text:
+        return "", ""
+
+    lower, upper = split_rec(text[1:])
+
+    letter = text[0]
+
+    if letter.islower() or letter == "_" or letter == ".":
+        lower = letter + lower
+    if letter.isupper() or letter == " " or letter == "|":
+        upper = letter + upper
+    return lower, upper 
+
+def split_it(text):
+    lower = ""
+    upper = ""
+    for letter in text:
+        if letter.islower() or letter == "_" or letter == ".":
+            lower += letter
+        if letter.isupper() or letter == " " or letter == "|":
+            upper += letter
+    return lower, upper
+
+
+def interpret(uttryck,tolkning):
+    if isinstance(uttryck, str):
+        return tolkning.get(uttryck, uttryck)
+    if uttryck[0] == "NOT":
+        value = interpret(uttryck[1], tolkning)
+        if value == "true":
+            return "false"
+        if value == "false":
+            return "true"
+    if uttryck[1] == "AND":
+        left = interpret(uttryck[0], tolkning)
+        right = interpret(uttryck[2], tolkning)
+        if left == "true" and right == "true":
+            return "true"
+        else:
+            return "false" 
+    if uttryck[1] == "OR":
+        left = interpret(uttryck[0], tolkning)
+        right = interpret(uttryck[2], tolkning)
+        if left == "true" or right == "true":
+            return "true"
+        else:
+            return "false" 

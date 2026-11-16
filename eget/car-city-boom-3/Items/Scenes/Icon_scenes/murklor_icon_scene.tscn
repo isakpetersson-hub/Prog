@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://clwxknfq7vnnh"]
+
+[ext_resource type="PackedScene" uid="uid://cweqab4s7rd8m" path="res://Items/Scenes/murklor.tscn" id="1_varrp"]
+
+[node name="murklor" type="SubViewport"]
+transparent_bg = true
+size = Vector2i(32, 32)
+render_target_update_mode = 4
+
+[node name="@Camera3D@39294" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00017637014, -0.0007182807, 0.23826721)
+current = true
+fov = 27.4
+
+[node name="murklor" parent="." instance=ExtResource("1_varrp")]
+transform = Transform3D(0.8424524, 0, -0.5387708, 0, 1, 0, 0.5387708, 0, 0.8424524, 0, 0, 0)

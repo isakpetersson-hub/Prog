@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyctnhfpuk5r0"]
+
+[ext_resource type="PackedScene" uid="uid://brlngd2xlx1pj" path="res://Items/Scenes/auto_cola.tscn" id="1_yuyld"]
+
+[node name="auto_cola" type="SubViewport"]
+transparent_bg = true
+size = Vector2i(32, 32)
+render_target_update_mode = 4
+
+[node name="@Camera3D@28315" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.293)
+current = true
+fov = 27.4
+
+[node name="auto_cola" parent="." instance=ExtResource("1_yuyld")]

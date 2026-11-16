@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfvbd7mynyqfh"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1l1uf"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="cube" type="MeshInstance3D" parent="."]
+physics_interpolation_mode = 2
+mesh = SubResource("BoxMesh_1l1uf")

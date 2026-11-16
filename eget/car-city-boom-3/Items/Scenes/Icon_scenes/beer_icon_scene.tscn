@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmxirfrv5qaqw"]
+
+[ext_resource type="PackedScene" uid="uid://dw171lnjfjeno" path="res://Items/Scenes/beer.tscn" id="1_2llox"]
+
+[node name="beer" type="SubViewport"]
+transparent_bg = true
+size = Vector2i(32, 32)
+render_target_update_mode = 4
+
+[node name="@Camera3D@32741" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.293)
+current = true
+fov = 27.4
+
+[node name="beer" parent="." instance=ExtResource("1_2llox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.047459662, -0.20837682)

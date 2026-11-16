@@ -1,0 +1,89 @@
+{
+	"gun_aim": {
+		"limit": 5.0,
+		"pitch_randomness": 0.07,
+		"pitch_scale": 1.0,
+		"sound_effects": [
+			"res://Sound/gunAim.wav"
+		],
+		"volume": -15.7
+	},
+	"gun_equip": {
+		"limit": 5.0,
+		"pitch_randomness": 0.11,
+		"pitch_scale": 0.97,
+		"sound_effects": [
+			"res://Sound/gunEquip.wav"
+		],
+		"volume": -12.6
+	},
+	"gun_unaim": {
+		"limit": 5.0,
+		"pitch_randomness": 0.06,
+		"pitch_scale": 1.06,
+		"sound_effects": [
+			"res://Sound/gunUnAim.wav"
+		],
+		"volume": -12.8
+	},
+	"gun_unequip": {
+		"limit": 5.0,
+		"pitch_randomness": 0.09,
+		"pitch_scale": 1.08,
+		"sound_effects": [
+			"res://Sound/gunUnequip.wav"
+		],
+		"volume": -13.3
+	},
+	"keypress": {
+		"limit": 5.0,
+		"pitch_randomness": 0.15,
+		"pitch_scale": 1.0,
+		"sound_effects": [
+			"res://Sound/keypress.wav"
+		],
+		"volume": -20.2
+	},
+	"music": {
+		"city_theme": {
+			"path": "res://Sound/music/citytheme.mp3",
+			"volume": -20.0
+		},
+		"cric": {
+			"path": "res://Sound/music/cric.wav",
+			"volume": -20.0
+		},
+		"john_boom_theme": {
+			"path": "res://Sound/music/JohnBoomTheme.mp3",
+			"volume": -15.0
+		}
+	},
+	"step": {
+		"limit": 5.0,
+		"pitch_randomness": 0.12,
+		"pitch_scale": 1.62,
+		"sound_effects": [
+			"res://Sound/step3.wav",
+			"res://Sound/step2.wav"
+		],
+		"volume": -10.0
+	},
+	"swosh": {
+		"limit": 5.0,
+		"pitch_randomness": 0.06,
+		"pitch_scale": 1.0,
+		"sound_effects": [
+			"res://Sound/swosh.wav"
+		],
+		"volume": -25.1
+	},
+	"wallet_button": {
+		"limit": 5.0,
+		"pitch_randomness": 0.1,
+		"pitch_scale": 1.0,
+		"sound_effects": [
+			"res://Sound/walletButton.wav"
+		],
+		"volume": -16.0
+	}
+}

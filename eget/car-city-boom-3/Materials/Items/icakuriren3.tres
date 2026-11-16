@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://coxht7up7uw3l"]
+
+[ext_resource type="Texture2D" uid="uid://c2b0evltlksjc" path="res://Textures/Items/icakuriren-36-2020.png" id="1_q2hhw"]
+
+[resource]
+albedo_texture = ExtResource("1_q2hhw")
+texture_filter = 0

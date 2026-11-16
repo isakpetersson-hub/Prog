@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7sqyaxku6do1"]
+
+[ext_resource type="Script" uid="uid://djlhwjfa86kxc" path="res://Scripts/NPCInteract.gd" id="1_ix8hr"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_r3cas"]
+radius = 0.3
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pl8ll"]
+radius = 0.3
+
+[node name="gun_machineman" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_r3cas")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_pl8ll")
+
+[node name="Talk to npc" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_ix8hr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Talk to npc"]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_pl8ll")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3236601, 0)
+billboard = 1
+text = "NPC name:
+sample dialouge"
+outline_size = 0

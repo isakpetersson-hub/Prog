@@ -1,0 +1,21 @@
+{
+	"mass": 100,
+	"engine_force": 6500,
+	"drift_engine_force": 15000,
+	"max_rpm": 300000,
+	"brake_force": 100,
+
+	"center_of_mass": [0.0, 0.0, 0.3],
+
+	"front_friction": 0.95,
+	"rear_friction": 0.85,
+
+	"suspension_stiffness": 45.0,
+	"suspension_travel": 0.8,
+	"damping_compression": 0.8,
+	"damping_relaxation": 1.2,
+	
+	"jump_force": 700,
+	"jump_rotation_force": 200,
+	"air_rotation_force": 300,
+}

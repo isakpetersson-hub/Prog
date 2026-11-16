@@ -1,0 +1,15 @@
+{
+	"mass": 1000,
+	"engine_force": 1000,
+	"drift_engine_force": 2000,
+
+	"center_of_mass": [0.0, -0.32, -0.15],
+
+	"front_friction": 1.5,
+	"rear_friction": 1.05,
+
+	"suspension_stiffness": 30.0,
+	"damping_compression": 2.0,
+	"damping_relaxation": 2.5,
+	"suspension_travel": 0.25
+}

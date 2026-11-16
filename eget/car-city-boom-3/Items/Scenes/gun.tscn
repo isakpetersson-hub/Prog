@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://by850gspgk2vo"]
+
+[ext_resource type="Script" uid="uid://c48qvc7b6fsne" path="res://Scripts/Items/gunUse.gd" id="1_oxe5b"]
+[ext_resource type="Texture2D" uid="uid://lw7v2jsviaey" path="res://Textures/Items/gun64.png" id="2_jkgka"]
+[ext_resource type="ArrayMesh" uid="uid://bv632eqi3jhn1" path="res://Models/Items/gun.obj" id="2_oxe5b"]
+[ext_resource type="Script" uid="uid://cdvygnoh07rcx" path="res://Scripts/item_interact.gd" id="3_jkgka"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gd0xq"]
+albedo_texture = ExtResource("2_jkgka")
+texture_filter = 0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gd0xq"]
+size = Vector3(0.4703369, 0.16043091, 0.07324219)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oxe5b"]
+size = Vector3(0.47, 0.16, 0.073)
+
+[node name="gun" type="RigidBody3D"]
+collision_layer = 8
+collision_mask = 25
+mass = 2.0
+continuous_cd = true
+script = ExtResource("1_oxe5b")
+
+[node name="gun_mesh_instance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_gd0xq")
+mesh = ExtResource("2_oxe5b")
+
+[node name="gun_collision3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16314697, -0.021499634, 0.00048828125)
+shape = SubResource("BoxShape3D_gd0xq")
+
+[node name="gun" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("3_jkgka")
+
+[node name="gun_collosion3D" type="CollisionShape3D" parent="gun"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -0.163, -0.021, 0)
+shape = SubResource("BoxShape3D_oxe5b")

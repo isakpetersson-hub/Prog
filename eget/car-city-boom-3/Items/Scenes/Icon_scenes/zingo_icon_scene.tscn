@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://beaoitatijml1"]
+
+[ext_resource type="PackedScene" uid="uid://d3dg2sh41lsx5" path="res://Items/Scenes/zingo.tscn" id="1_pjxha"]
+
+[node name="zingo" type="SubViewport"]
+transparent_bg = true
+size = Vector2i(32, 32)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.2931494)
+current = true
+fov = 27.39763
+
+[node name="zingo" parent="." instance=ExtResource("1_pjxha")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)

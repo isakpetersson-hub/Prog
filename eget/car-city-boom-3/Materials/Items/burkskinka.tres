@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c8gc6of27kffm"]
+
+[ext_resource type="Texture2D" uid="uid://bajcj85st615m" path="res://Textures/Items/burkskinka.png" id="1_3vip4"]
+
+[resource]
+albedo_texture = ExtResource("1_3vip4")
+texture_filter = 0

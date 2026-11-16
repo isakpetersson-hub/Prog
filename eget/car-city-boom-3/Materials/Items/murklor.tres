@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://comvr2hh20u6m"]
+
+[ext_resource type="Texture2D" uid="uid://bwm7c2u0tav37" path="res://Textures/Items/Murklor.png" id="1_ydbud"]
+
+[resource]
+albedo_texture = ExtResource("1_ydbud")
+texture_filter = 0

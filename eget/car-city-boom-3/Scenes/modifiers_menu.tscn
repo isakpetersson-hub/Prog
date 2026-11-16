@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://bmjcqlahsaul6"]
+
+[node name="ModifiersMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HScrollBar" type="HScrollBar" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 302.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HScrollBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DrunkMode" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode2" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode3" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode4" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode5" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode6" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode7" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode8" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode9" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode10" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode11" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode12" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode13" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode14" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode15" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode16" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode17" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode18" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode19" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"
+
+[node name="DrunkMode20" type="CheckBox" parent="HScrollBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Drunk Mode"

@@ -1,0 +1,484 @@
+[gd_scene load_steps=26 format=3 uid="uid://csytwpjb3euro"]
+
+[ext_resource type="PhysicsMaterial" uid="uid://dlyp44rnkrt0s" path="res://Materials/car.tres" id="1_aucv8"]
+[ext_resource type="Script" uid="uid://b4wsxsvv2uvd2" path="res://Scripts/NewCarController.gd" id="1_qkgxh"]
+[ext_resource type="ArrayMesh" uid="uid://bcdnm3tgr0jam" path="res://Models/CCB3BMWM2.obj" id="2_aucv8"]
+[ext_resource type="ArrayMesh" uid="uid://dcktbph2yvfc2" path="res://Models/CCB3BMWM2wheel.obj" id="3_fs8vv"]
+[ext_resource type="ArrayMesh" uid="uid://ox7nf4a1w0my" path="res://Models/CCB3BMWM3.obj" id="3_sjwxn"]
+[ext_resource type="Material" uid="uid://cjex3ryij76o1" path="res://Materials/CarBodyTex.tres" id="4_62l6g"]
+[ext_resource type="Material" uid="uid://x2a7xhkl8wu1" path="res://Materials/CarBody.tres" id="4_fs8vv"]
+[ext_resource type="Material" uid="uid://cddwhoaaoacex" path="res://Materials/carDark.tres" id="5_ccgjb"]
+[ext_resource type="Material" uid="uid://cbd2ggf331nmh" path="res://Materials/glass.tres" id="6_4n7xf"]
+[ext_resource type="Script" uid="uid://c4emlsjdl4dhb" path="res://Scripts/car_door_interact.gd" id="6_451n7"]
+[ext_resource type="Material" uid="uid://dyuaw68e5d7cv" path="res://Materials/Headlights.tres" id="7_0u14p"]
+[ext_resource type="Script" uid="uid://s0twc6xolrtn" path="res://Scripts/inventory_manager.gd" id="7_ec0ru"]
+[ext_resource type="Texture2D" uid="uid://c28osuvadlh4c" path="res://Items/Icons/zingoIcon.png" id="8_iejgh"]
+[ext_resource type="Material" uid="uid://dps61h3w88hct" path="res://Materials/Backlight.tres" id="8_wx1rv"]
+[ext_resource type="Material" uid="uid://iqfwqqg6y7o" path="res://Materials/Blincker.tres" id="9_xfstt"]
+[ext_resource type="Material" uid="uid://dhmvh4cjwd7nr" path="res://Materials/CarBodyTire.tres" id="10_4n7xf"]
+[ext_resource type="ArrayMesh" uid="uid://bsruv13vaapae" path="res://Models/CCB3BMWMTire.obj" id="11_vc8ef"]
+[ext_resource type="ArrayMesh" uid="uid://d2ddahwjydq0m" path="res://Models/CCB3BMWMHuv2.obj" id="13_62l6g"]
+[ext_resource type="Material" uid="uid://b0rqtpkrhqauu" path="res://Materials/glow.tres" id="19_wx1rv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fs8vv"]
+transparency = 1
+albedo_color = Color(0.085538425, 0.11568812, 0.16815907, 1)
+roughness = 0.0
+clearcoat_enabled = true
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qkgxh"]
+points = PackedVector3Array(0.906453, 0.03146255, 1.1753287, 0.90503335, 0.079799265, 1.2498691, 0.9041461, 0.10386863, 1.4315078, 0.8989998, -0.002511859, 1.6542721, 0.8926114, -0.12751383, 1.054522, 0.8926114, -0.14772019, -0.8385463, 0.906453, 0.014029622, -0.9580679, 0.90503335, 0.059592932, -1.0386057, 0.9041461, 0.08395943, -1.2275269, 0.77939343, 0.3238602, 1.0502381, 0.7770865, 0.3206906, 1.1436276, 0.80547965, 0.2202532, 1.8144908, 0.7990912, 0.22015414, 1.90274, 0.8189665, 0.15785125, 2.0089812, 0.9004195, 0.0782145, 1.534322, 0.8989998, 0.019477397, 1.6307104, 0.80991614, 0.27611777, 0.7657852, 0.8450527, 0.05889961, 2.0376835, 0.860669, -0.0008279979, 1.900598, 0.83955157, -0.086903036, 1.938725, 0.8663477, -0.121570796, 1.7266705, 0.87344587, -0.22171105, 1.0279617, 0.87344587, -0.2419174, -0.81198585, 0.88214135, -0.052532464, -1.4819924, 0.8926114, 0.011751443, -1.4083087, 0.9000646, 0.05889961, -1.327771, 0.8035277, 0.08861479, -1.6203632, 0.8106259, 0.12080631, -1.4721394, 0.8159497, 0.14438036, -1.335482, 0.82003117, 0.16072372, -1.2288122, 0.8241128, 0.17310503, -1.1127177, 0.565912, 0.528499, -0.16768289, 0.8306787, 0.18825981, -0.92722356, 0.83671224, 0.1917266, -0.6821828, 0.77939343, 0.3248507, 0.8900192, 0.7321898, 0.38319162, 1.0519516, 0.7187029, 0.39993116, 1.0665169, 0.7187029, 0.39517674, 1.1457696, 0.7187029, 0.38200298, 1.3214107, 0.7187029, 0.37249413, 1.431936, 0.75153255, 0.28235796, 1.9053102, 0.7451441, 0.2750282, 2.0509639, 0.7877339, 0.21975794, 1.9867048, 0.8010433, 0.18073198, 2.0351133, 0.79075074, 0.18201962, 2.076239, 0.8106259, 0.12050912, 2.08395, 0.8303237, 0.058998615, 2.0920897, 0.84363306, 0.018982142, 2.0158358, 0.8258873, 0.019279301, 2.085235, 0.8214508, -0.07808754, 2.0342565, 0.82091844, -0.26816583, 1.7540877, 0.8381319, -0.32828963, 1.0142531, 0.8381319, -0.33720416, -0.8068452, 0.80973864, -0.30570605, -1.5672426, 0.8580071, -0.15158316, -1.5346847, 0.7964294, -0.079276145, -1.9339468, 0.795897, -0.068083405, -1.9360888, 0.79412246, -0.059862196, -1.9339468, 0.777264, 0.003827393, -1.9283777, 0.78649175, 0.027896732, -1.8486967, 0.7955421, 0.05186698, -1.769444, 0.5281136, 0.552073, -0.13041282, 0.5634277, 0.53295624, -0.05929947, 0.7194128, 0.39646438, 0.8904476, 0.5634277, 0.53295624, 0.57943416, 0.63742745, 0.46946475, 0.95513487, 0.6438159, 0.46362075, 1.0643749, 0.65197897, 0.44925842, 1.1774707, 0.6615616, 0.43123117, 1.3102725, 0.6707895, 0.41369918, 1.4366484, 0.67948484, 0.3970587, 1.55617, 0.6894225, 0.37596092, 1.6864016, 0.6936815, 0.34872195, 1.9301572, 0.7147989, 0.31395516, 2.043253, 0.7187029, 0.36140046, 1.5394628, 0.7187029, 0.33396336, 1.8050663, 0.77548933, 0.17984048, 2.0809512, 0.7927028, 0.119419545, 2.0972304, 0.80991614, 0.058998615, 2.113081, 0.8196763, -0.0008279979, 2.0890908, 0.72615623, -0.20913161, 2.1662016, 0.78986347, -0.16198349, 2.0483937, 0.7797483, -0.14039043, 2.1032276, 0.7992687, -0.20328762, 1.944294, 0.71728325, -0.23042752, 2.1662016, 0.7923478, -0.31026238, 1.7592282, 0.8113358, -0.3972289, 1.0142531, 0.8113358, -0.40624252, -0.8068452, 0.7689234, -0.37306052, -1.5693846, 0.69882774, -0.395446, -1.8559794, 0.80406, -0.29897058, -1.6147943, 0.7499355, -0.22973417, -2.017055, 0.76413214, -0.082941025, -2.0915954, 0.7545494, -0.033316612, -2.0281932, 0.7043289, -0.015190333, -2.0110576, 0.670612, -0.01410079, -2.014913, 0.43477094, 0.53899837, -0.20666671, 0.5245644, 0.5330553, -0.19938397, 0.25323188, 0.5437528, -0.21694815, 0.25323188, 0.5568274, -0.15140414, 0.43477094, 0.55979896, -0.05929947, 0.5281136, 0.552073, 0.6702535, 0.5547322, 0.5395926, 0.8506069, 0.5868521, 0.505123, 1.0635183, 0.6047752, 0.48501572, 1.1928928, 0.56431496, 0.5302819, 0.902014, 0.65215635, 0.41776028, 1.5690219, 0.6652882, 0.3980492, 1.680404, 0.69137454, 0.3310909, 2.0415392, 0.58649707, 0.29335263, 2.0698133, 0.7321898, 0.18023673, 2.0869489, 0.73254466, 0.05889961, 2.126361, 0.6594322, 0.32950613, 2.0471082, 0.71781564, 0.019279301, 2.1362143, 0.71728325, -0.18773666, 2.1662016, 0.21738541, -0.041339725, 2.179482, 0, -0.041240662, 2.185051, 0.6959884, -0.23924303, 2.1662016, 0.75969565, -0.32680386, 1.7759356, 0.777264, -0.4456647, 1.0142531, 0.7728275, -0.452103, -0.7712885, 0.7162186, -0.395446, -1.7655885, 0.6819693, -0.395446, -1.9125272, 0.7433696, -0.26776963, -1.9832121, 0.7724726, -0.31273866, -1.7278899, 0.7187029, -0.26251996, -2.0303352, 0.726866, -0.22022529, -2.0586092, 0.71337926, -0.108694196, -2.1220114, 0.726866, -0.08304006, -2.1211545, 0.7309475, -0.04153782, -2.0513265, 0.6766455, -0.042924523, -2.0740314, 0.6732738, -0.015190333, -2.017912, 0.44169176, 0.02779767, -1.9180963, 0.092277944, 0.5467243, -0.22208881, 0.436723, 0.028094828, -1.917668, 0.092277944, 0.55979896, -0.15654469, 0.43477094, 0.55979896, 0.82318974, 0.5279361, 0.5490024, 0.8240466, 0.5859648, 0.46490845, 1.3209825, 0.63299096, 0.4011198, 1.6786904, 0.6542859, 0.35347638, 1.9263015, -0.6915519, 0.3310909, 2.0415392, 0.43885243, 0.29265925, 2.0766673, 0.2182728, 0.019477397, 2.1730556, 0.39093888, 0.019477397, 2.1649165, 0.56413746, 0.019477397, 2.1550632, -0.6596096, 0.32950613, 2.0471082, 0.17692518, 0.29265925, 2.0843787, 0.27807593, 0.29265925, 2.082665, 0.5660895, -0.04153782, 2.1619177, 0.39306843, -0.04143876, 2.1717706, 0, 0.019477397, 2.1764832, -0.21845019, 0.019477397, 2.1730556, -0.21756291, -0.041339725, 2.179482, -0.7263336, -0.20913161, 2.1662016, -0.71746075, -0.23042752, 2.1662016, -0.69616586, -0.23924303, 2.1662016, 0.5747849, -0.34314722, 1.8389096, 0.5747849, -0.4456647, 1.2066014, -0.77300495, -0.452103, -0.7712885, 0, -0.395446, -2.0050602, 0.20407617, -0.395446, -1.9999194, 0.40318346, -0.395446, -1.9922084, 0.593418, -0.395446, -1.977643, 0.6328136, -0.395446, -1.9639344, 0.67629063, -0.26311424, -2.05304, 0.67983973, -0.19962275, -2.0928807, 0.46635842, -0.107703686, -2.1524272, 0.43690038, -0.08304006, -2.15971, 0.6766455, -0.08304006, -2.1297224, 0.43690038, -0.04114163, -2.10102, 0.11250806, -0.06719196, -2.1854136, 0.46884274, -0.013803631, -2.035476, 0.43370616, 0.000954926, -2.001633, 0, 0.5467243, -0.22423077, 0, 0.058107167, -1.8461263, 0.32474732, 0.003926456, -1.9986342, 0, 0.55979896, -0.15868664, -0.43494838, 0.55979896, 0.82318974, -0.63316846, 0.4011198, 1.6786904, -0.6544633, 0.35347638, 1.9263015, -0.6654657, 0.3980492, 1.680404, -0.6938589, 0.34872195, 1.9301572, -0.7149764, 0.31395516, 2.043253, -0.77566683, 0.17984048, 2.0809512, -0.5866746, 0.29335263, 2.0698133, -0.4390299, 0.29265925, 2.0766673, -0.27825338, 0.29265925, 2.082665, -0.17710263, 0.29265925, 2.0843787, -0.39111638, 0.019477397, 2.1649165, -0.39324588, -0.04143876, 2.1717706, -0.71746075, -0.18773666, 2.1662016, -0.8100936, 0.058998615, 2.113081, -0.8305012, 0.058998615, 2.0920897, -0.8198537, -0.0008279979, 2.0890908, -0.7799258, -0.14039043, 2.1032276, -0.79004085, -0.16198349, 2.0483937, -0.7994461, -0.20328762, 1.944294, -0.82109594, -0.26816583, 1.7540877, -0.7925253, -0.31026238, 1.7592282, -0.7598731, -0.32680386, 1.7759356, -0.5749624, -0.34314722, 1.8389096, -0.5749624, -0.4456647, 1.2066014, -0.81151325, -0.40624252, -0.8068452, -0.7691009, -0.37306052, -1.5693846, -0.716396, -0.395446, -1.7655885, -0.6990052, -0.395446, -1.8559794, -0.6821467, -0.395446, -1.9125272, -0.63299096, -0.395446, -1.9639344, -0.5935954, -0.395446, -1.977643, -0.40336096, -0.395446, -1.9922084, -0.20425361, -0.395446, -1.9999194, -0.7774414, -0.4456647, 1.0142531, 0, -0.2487519, -2.1267238, 0.11020112, -0.24221455, -2.1232965, 0.32474732, -0.26291615, -2.089882, 0.51924074, -0.26232183, -2.0718894, 0.4665358, -0.20001894, -2.1155856, 0.15385568, -0.20368382, -2.13572, 0.32474732, -0.08531824, -2.1699915, 0, -0.06560713, -2.191411, -0.09245539, 0.5467243, -0.22208881, 0.17035925, 0.008482784, -1.9917799, 0, 0.002044499, -2.0127711, -0.1705367, 0.008482784, -1.9917799, -0.3249247, 0.003926456, -1.9986342, -0.4369004, 0.028094828, -1.917668, -0.09245539, 0.55979896, -0.15654469, -0.43494838, 0.55979896, -0.05929947, -0.52829105, 0.552073, 0.6702535, -0.5281136, 0.5490024, 0.8240466, -0.6049527, 0.48501572, 1.1928928, -0.5861422, 0.46490845, 1.3209825, -0.68959993, 0.37596092, 1.6864016, -0.65233386, 0.41776028, 1.5690219, -0.6796623, 0.3970587, 1.55617, -0.7188804, 0.37249413, 1.431936, -0.7453216, 0.2750282, 2.0509639, -0.7909282, 0.18201962, 2.076239, -0.7188804, 0.36140046, 1.5394628, -0.7188804, 0.33396336, 1.8050663, -0.75171006, 0.28235796, 1.9053102, -0.7928802, 0.119419545, 2.0972304, -0.7327221, 0.05889961, 2.126361, -0.73236716, 0.18023673, 2.0869489, -0.5643149, 0.019477397, 2.1550632, -0.56626695, -0.04153782, 2.1619177, -0.71799314, 0.019279301, 2.1362143, -0.8108034, 0.12050912, 2.08395, -0.8191439, 0.15785125, 2.0089812, -0.84523016, 0.05889961, 2.0376835, -0.82606477, 0.019279301, 2.085235, -0.82162833, -0.07808754, 2.0342565, -0.839729, -0.086903036, 1.938725, -0.86652505, -0.121570796, 1.7266705, -0.8736234, -0.22171105, 1.0279617, -0.83830935, -0.32828963, 1.0142531, -0.81151325, -0.3972289, 1.0142531, -0.83830935, -0.33720416, -0.8068452, -0.80991614, -0.30570605, -1.5672426, -0.8042375, -0.29897058, -1.6147943, -0.77265006, -0.31273866, -1.7278899, -0.743547, -0.26776963, -1.9832121, -0.7188804, -0.26251996, -2.0303352, -0.6764681, -0.26311424, -2.05304, -0.5194181, -0.26232183, -2.0718894, -0.3249247, -0.26291615, -2.089882, -0.11037856, -0.24221455, -2.1232965, -0.15403312, -0.20368382, -2.13572, -0.23548615, -0.08264387, -2.175132, -0.012776911, -0.09254894, -2.181558, 0.012599468, -0.09254894, -2.181558, 0.23530865, -0.08264387, -2.175132, -0.3249247, -0.08531824, -2.1699915, -0.1126855, -0.06719196, -2.1854136, -0.43707788, -0.04114163, -2.10102, -0.46902022, -0.013803631, -2.035476, -0.43388364, 0.000954926, -2.001633, -0.25340933, 0.5437528, -0.21694815, -0.44186923, 0.02779767, -1.9180963, -0.25340933, 0.5568274, -0.15140414, -0.52829105, 0.552073, -0.13041282, -0.5549097, 0.5395926, 0.8506069, -0.58702946, 0.505123, 1.0635183, -0.6439934, 0.46362075, 1.0643749, -0.65215635, 0.44925842, 1.1774707, -0.6617391, 0.43123117, 1.3102725, -0.67096686, 0.41369918, 1.4366484, -0.7188804, 0.38200298, 1.3214107, -0.77726394, 0.3206906, 1.1436276, -0.80565715, 0.2202532, 1.8144908, -0.79926866, 0.22015414, 1.90274, -0.7879114, 0.21975794, 1.9867048, -0.8012207, 0.18073198, 2.0351133, -0.9043235, 0.10386863, 1.4315078, -0.9005969, 0.0782145, 1.534322, -0.89917725, 0.019477397, 1.6307104, -0.89917725, -0.002511859, 1.6542721, -0.8608464, -0.0008279979, 1.900598, -0.8438105, 0.018982142, 2.0158358, -0.89278877, -0.12751383, 1.054522, -0.8736234, -0.2419174, -0.81198585, -0.8581846, -0.15158316, -1.5346847, -0.75011295, -0.22973417, -2.017055, -0.72704345, -0.22022529, -2.0586092, -0.68001723, -0.19962275, -2.0928807, -0.46671328, -0.20001894, -2.1155856, -0.4665358, -0.107703686, -2.1524272, -0.43707788, -0.08304006, -2.15971, -0.67682296, -0.08304006, -2.1297224, -0.67682296, -0.042924523, -2.0740314, -0.6734513, -0.015190333, -2.017912, -0.43494838, 0.53899837, -0.20666671, -0.6707894, -0.01410079, -2.014913, -0.5660895, 0.528499, -0.16768289, -0.56360507, 0.53295624, -0.05929947, -0.5247419, 0.5330553, -0.19938397, -0.7957195, 0.05186698, -1.769444, -0.8037051, 0.08861479, -1.6203632, -0.56360507, 0.53295624, 0.57943416, -0.63760483, 0.46946475, 0.95513487, -0.56449234, 0.5302819, 0.902014, -0.7188804, 0.39993116, 1.0665169, -0.7188804, 0.39517674, 1.1457696, -0.7795709, 0.3238602, 1.0502381, -0.9052108, 0.079799265, 1.2498691, -0.906453, 0.03146255, 1.1753287, -0.8100936, 0.27611777, 0.7657852, -0.9043235, 0.08395943, -1.2275269, -0.89278877, -0.14772019, -0.8385463, -0.8823188, -0.052532464, -1.4819924, -0.7966068, -0.079276145, -1.9339468, -0.7643095, -0.082941025, -2.0915954, -0.7135567, -0.108694196, -2.1220114, -0.72704345, -0.08304006, -2.1211545, -0.731125, -0.04153782, -2.0513265, -0.7547268, -0.033316612, -2.0281932, -0.70450634, -0.015190333, -2.0110576, -0.8308561, 0.18825981, -0.92722356, -0.71959025, 0.39646438, 0.8904476, -0.8108034, 0.12080631, -1.4721394, -0.8161271, 0.14438036, -1.335482, -0.82020867, 0.16072372, -1.2288122, -0.82429016, 0.17310503, -1.1127177, -0.7774414, 0.003827393, -1.9283777, -0.7866692, 0.027896732, -1.8486967, -0.900242, 0.05889961, -1.327771, -0.7795709, 0.3248507, 0.8900192, -0.73236716, 0.38319162, 1.0519516, -0.9052108, 0.059592932, -1.0386057, -0.906453, 0.014029622, -0.9580679, -0.8368897, 0.1917266, -0.6821828, -0.89278877, 0.011751443, -1.4083087, -0.79607445, -0.068083405, -1.9360888, -0.79429984, -0.059862196, -1.9339468)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ec0ru"]
+size = Vector3(1.91, 0.905, 1.44)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4n7xf"]
+size = Vector3(1.2125244, 0.06350899, 1.1278076)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vc8ef"]
+size = Vector3(1, 1.9730225, 1)
+
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_wx1rv"]
+cap_top = false
+cap_bottom = false
+
+[node name="CarM1V2" type="VehicleBody3D"]
+collision_layer = 4
+collision_mask = 5
+physics_material_override = ExtResource("1_aucv8")
+center_of_mass_mode = 1
+center_of_mass = Vector3(0, -0.32, -0.15)
+contact_monitor = true
+max_contacts_reported = 3
+angular_damp = 0.05
+script = ExtResource("1_qkgxh")
+
+[node name="Ccb3bmwm3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.002019167, 0.3780001, 0.002138853)
+mesh = ExtResource("3_sjwxn")
+surface_material_override/0 = ExtResource("4_62l6g")
+surface_material_override/1 = ExtResource("5_ccgjb")
+surface_material_override/2 = ExtResource("6_4n7xf")
+surface_material_override/3 = ExtResource("5_ccgjb")
+surface_material_override/4 = ExtResource("5_ccgjb")
+surface_material_override/5 = ExtResource("5_ccgjb")
+surface_material_override/6 = ExtResource("5_ccgjb")
+surface_material_override/7 = ExtResource("5_ccgjb")
+surface_material_override/8 = ExtResource("5_ccgjb")
+surface_material_override/9 = ExtResource("5_ccgjb")
+surface_material_override/10 = ExtResource("7_0u14p")
+surface_material_override/11 = ExtResource("8_wx1rv")
+surface_material_override/12 = ExtResource("9_xfstt")
+surface_material_override/13 = ExtResource("5_ccgjb")
+surface_material_override/14 = ExtResource("5_ccgjb")
+surface_material_override/15 = ExtResource("5_ccgjb")
+surface_material_override/16 = ExtResource("9_xfstt")
+surface_material_override/17 = ExtResource("7_0u14p")
+
+[node name="Ccb3bmwm2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0.37802684, 0)
+visible = false
+mesh = ExtResource("2_aucv8")
+surface_material_override/0 = ExtResource("4_fs8vv")
+surface_material_override/2 = SubResource("StandardMaterial3D_fs8vv")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0.37802684, 0)
+shape = SubResource("ConvexPolygonShape3D_qkgxh")
+
+[node name="fl" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7984779, 0.1, 1.185)
+use_as_steering = true
+wheel_roll_influence = 0.0
+wheel_radius = 0.317
+wheel_friction_slip = 1.0
+suspension_travel = 0.22
+suspension_stiffness = 30.0
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="Ccb3bmwm2Wheel" type="MeshInstance3D" parent="fl"]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+visible = false
+mesh = ExtResource("3_fs8vv")
+skeleton = NodePath("../..")
+
+[node name="Ccb3bmwmTire" type="MeshInstance3D" parent="fl"]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+material_override = ExtResource("10_4n7xf")
+mesh = ExtResource("11_vc8ef")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("4_62l6g")
+surface_material_override/1 = ExtResource("10_4n7xf")
+
+[node name="bl" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.79840773, 0.10041614, -1.3892498)
+use_as_traction = true
+wheel_roll_influence = 0.0
+wheel_radius = 0.317
+wheel_friction_slip = 1.0
+suspension_travel = 0.22
+suspension_stiffness = 30.0
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="Ccb3bmwm2Wheel2" type="MeshInstance3D" parent="bl"]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+visible = false
+mesh = ExtResource("3_fs8vv")
+skeleton = NodePath("../..")
+
+[node name="Ccb3bmwmTire2" type="MeshInstance3D" parent="bl"]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+material_override = ExtResource("10_4n7xf")
+mesh = ExtResource("11_vc8ef")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("4_62l6g")
+surface_material_override/1 = ExtResource("10_4n7xf")
+
+[node name="fr" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.798, 0.1, 1.185)
+use_as_steering = true
+wheel_roll_influence = 0.0
+wheel_radius = 0.317
+wheel_friction_slip = 1.0
+suspension_travel = 0.22
+suspension_stiffness = 30.0
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="Ccb3bmwm2Wheel2" type="MeshInstance3D" parent="fr"]
+visible = false
+mesh = ExtResource("3_fs8vv")
+skeleton = NodePath("../..")
+
+[node name="Ccb3bmwmTire2" type="MeshInstance3D" parent="fr"]
+material_override = ExtResource("10_4n7xf")
+mesh = ExtResource("11_vc8ef")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("4_62l6g")
+surface_material_override/1 = ExtResource("10_4n7xf")
+
+[node name="br" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, -8.742278e-08, 0, 8.742278e-08, 1, -0.798, 0.1, -1.389)
+use_as_traction = true
+wheel_roll_influence = 0.0
+wheel_radius = 0.317
+wheel_friction_slip = 1.0
+suspension_travel = 0.22
+suspension_stiffness = 30.0
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="Ccb3bmwm2Wheel3" type="MeshInstance3D" parent="br"]
+transform = Transform3D(1, 0, 0, 0, 1, 8.742278e-08, 0, -8.742278e-08, 1, 0, 0.00041613728, -0.00024974346)
+visible = false
+mesh = ExtResource("3_fs8vv")
+skeleton = NodePath("../..")
+
+[node name="Ccb3bmwmTire3" type="MeshInstance3D" parent="br"]
+material_override = ExtResource("10_4n7xf")
+mesh = ExtResource("11_vc8ef")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("4_62l6g")
+surface_material_override/1 = ExtResource("10_4n7xf")
+
+[node name="Enter Car" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("6_451n7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enter Car"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49065638, 0)
+shape = SubResource("BoxShape3D_ec0ru")
+
+[node name="playerExitPos" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2570311, -0.34295106, 0)
+
+[node name="Inventory" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6458404, 1.4688528)
+script = ExtResource("7_ec0ru")
+
+[node name="InventoryCam" type="Camera3D" parent="Inventory"]
+transform = Transform3D(1, 0, 0, 0, 0.539638, 0.84189713, 0, -0.84189713, 0.539638, -2.3841858e-07, 0.66514474, 0.48727345)
+
+[node name="inventory UI" type="Control" parent="Inventory"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="hotbar" type="Control" parent="Inventory/inventory UI"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Inventory/inventory UI/hotbar"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -92.0
+offset_right = 20.0
+offset_bottom = -52.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="Inventory/inventory UI/hotbar/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0, 0, 0, 0.36862746)
+
+[node name="TextureRect" type="TextureRect" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_iejgh")
+
+[node name="Label" type="Label" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -22.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button1" type="Button" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="ColorRect2" type="ColorRect" parent="Inventory/inventory UI/hotbar/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0, 0, 0, 0.36862746)
+
+[node name="TextureRect" type="TextureRect" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect2"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_iejgh")
+
+[node name="Label" type="Label" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect2"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -22.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="ColorRect3" type="ColorRect" parent="Inventory/inventory UI/hotbar/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0, 0, 0, 0.36862746)
+
+[node name="TextureRect" type="TextureRect" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect3"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_iejgh")
+
+[node name="Label" type="Label" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect3"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -22.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button3" type="Button" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="ColorRect4" type="ColorRect" parent="Inventory/inventory UI/hotbar/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0, 0, 0, 0.36862746)
+
+[node name="TextureRect" type="TextureRect" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect4"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_iejgh")
+
+[node name="Label" type="Label" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect4"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -22.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button4" type="Button" parent="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="ColorRect2" type="ColorRect" parent="Inventory/inventory UI"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -229.0
+offset_top = -108.0
+offset_right = -71.0
+offset_bottom = 108.0
+grow_horizontal = 0
+grow_vertical = 2
+color = Color(0, 0, 0, 0.36862746)
+
+[node name="Label" type="Label" parent="Inventory/inventory UI/ColorRect2"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 9.0
+offset_right = 94.0
+offset_bottom = 32.0
+text = "ITEM INFO:"
+
+[node name="infoText" type="Label" parent="Inventory/inventory UI/ColorRect2"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 30.0
+offset_right = 111.0
+offset_bottom = 53.0
+text = "ZINGO"
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Inventory"]
+light_energy = 0.2
+
+[node name="huv" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0.569, 1.011)
+mesh = ExtResource("13_62l6g")
+surface_material_override/0 = ExtResource("4_62l6g")
+surface_material_override/1 = ExtResource("5_ccgjb")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15226829, 1.3381022)
+collision_layer = 16
+collision_mask = 16
+lock_rotation = true
+freeze = true
+freeze_mode = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15058096, 0)
+shape = SubResource("BoxShape3D_4n7xf")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="RigidBody3D"]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 0.0670227, 0.9977515, 0, -0.9977515, 0.0670227, 0, 0.13334638, 0.5023842)
+shape = SubResource("BoxShape3D_4n7xf")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="RigidBody3D"]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, -0.044177376, 0.9990237, 0, -0.9990237, -0.044177376, 0.018859863, 0.28693527, -1.2091589)
+shape = SubResource("BoxShape3D_vc8ef")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="RigidBody3D"]
+physics_interpolation_mode = 1
+transform = Transform3D(-0.049812093, -0.99866354, 0.013772782, 0.0028878497, 0.013645813, 0.99990296, -0.99875456, 0.049847014, 0.0022042627, -0.4753423, 0.2930482, 0.018360734)
+shape = SubResource("BoxShape3D_4n7xf")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="RigidBody3D"]
+physics_interpolation_mode = 1
+transform = Transform3D(0.060784847, 0.9980553, 0.013811853, 0.0028790494, 0.013662066, -0.9999028, -0.9981469, 0.06081865, -0.002043005, 0.47116795, 0.2930482, 0.018360734)
+shape = SubResource("BoxShape3D_4n7xf")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4416504, -2.973877)
+material_override = ExtResource("19_wx1rv")
+size = Vector3(1, 0.11669922, 2.003418)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.92476964, -0.06955278, -1.383406)
+visible = false
+local_coords = true
+trail_enabled = true
+trail_lifetime = 2.0599999999999996
+draw_pass_1 = SubResource("TubeTrailMesh_wx1rv")
+
+[connection signal="pressed" from="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect/Button1" to="Inventory" method="_on_button_1_pressed"]
+[connection signal="pressed" from="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect2/Button2" to="Inventory" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect3/Button3" to="Inventory" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Inventory/inventory UI/hotbar/HBoxContainer/ColorRect4/Button4" to="Inventory" method="_on_button_4_pressed"]

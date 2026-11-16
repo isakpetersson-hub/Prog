@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2r3vasqa84br"]
+
+[ext_resource type="Script" uid="uid://eouayou685l" path="res://Scripts/Items/defaultUse.gd" id="1_rkit3"]
+[ext_resource type="Texture2D" uid="uid://dys5ja23k05bb" path="res://Textures/Items/ColaCan.png" id="1_uf65e"]
+[ext_resource type="ArrayMesh" uid="uid://dh2we0m83xp5i" path="res://Models/Items/can.obj" id="2_rkit3"]
+[ext_resource type="Script" uid="uid://cdvygnoh07rcx" path="res://Scripts/item_interact.gd" id="3_rkit3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uf65e"]
+albedo_texture = ExtResource("1_uf65e")
+texture_filter = 0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rkit3"]
+points = PackedVector3Array(-5.595386e-06, 0.045736, 0.033, -0.028579, 0.045736, 0.01649354, -5.595386e-06, -0.047617685, 0.033, 0.028579, 0.045736, 0.01649354, 0.023784127, 0.052861996, 0.013728466, -5.595386e-06, 0.052861996, 0.027463391, -0.023789724, 0.052861996, 0.013728466, -0.028579, 0.045736, -0.01650646, -0.028579, -0.047617685, 0.01649354, -0.02254205, -0.05467, 0.013011355, -5.595386e-06, -0.05467, 0.02602271, 0.022536453, -0.05467, 0.013011355, 0.028579, -0.047617685, 0.01649354, 0.028579, 0.045736, -0.01650646, 0.023784127, 0.052861996, -0.013734926, -0.023789724, 0.052861996, -0.013734926, -5.595386e-06, 0.045736, -0.033, -0.028579, -0.047617685, -0.01650646, -5.595386e-06, 0.052861996, -0.027469851, -0.02254205, -0.05467, -0.013017815, 0.022536453, -0.05467, -0.013017815, 0.028579, -0.047617685, -0.01650646, -5.595386e-06, -0.047617685, -0.033, -5.595386e-06, -0.05467, -0.02602917)
+
+[node name="cola" type="RigidBody3D"]
+collision_layer = 8
+collision_mask = 25
+mass = 0.5
+continuous_cd = true
+script = ExtResource("1_rkit3")
+
+[node name="cola_mesh_instance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_uf65e")
+mesh = ExtResource("2_rkit3")
+
+[node name="cola_collision3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_rkit3")
+
+[node name="cola" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("3_rkit3")
+
+[node name="cola_collosion3D" type="CollisionShape3D" parent="cola"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_rkit3")

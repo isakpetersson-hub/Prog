@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://rgyinahvhaa0"]
+
+[ext_resource type="Script" uid="uid://cny27k2baof07" path="res://Scripts/shop_manager.gd" id="1_xhfqe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_81ha4"]
+size = Vector3(1, 2.0975342, 1.0141602)
+
+[node name="shop" type="Area3D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_xhfqe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5487671, 0.007080078)
+shape = SubResource("BoxShape3D_81ha4")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(0.30757493, 0, 0, 0, 1, 0, 0, 0, 0.33787876, 0, 0.34136963, 0)
+size = Vector3(1, 1.6827393, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D"]
+transform = Transform3D(3.5950568, 0, 0, 0, 0.375787, 0, 0, 0, 2.420214, 0, 0.8452107, 0)
+size = Vector3(1, 1.6827393, 1)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.7993387, 0.60088074, 0, -0.60088074, 0.7993387, 0, 1.4698044, 2.3997405)
+
+[node name="ObjectSpawn" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1203218)

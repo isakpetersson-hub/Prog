@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ma4ksuwdf8kw"]
+
+[ext_resource type="PackedScene" uid="uid://dmuexc4s43o3x" path="res://Scenes/Player.tscn" id="1_al1xc"]
+[ext_resource type="Material" uid="uid://bwb83wnah2y72" path="res://Materials/grey.tres" id="1_iqjig"]
+[ext_resource type="PackedScene" uid="uid://rgyinahvhaa0" path="res://Scenes/Old_scenes/testshop.tscn" id="2_r8hbh"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(85.54581, 0, 0, 0, 0.0068774195, 0, 0, 0, 80.40042, 0, 0, 0)
+material_override = ExtResource("1_iqjig")
+use_collision = true
+collision_layer = 9
+collision_mask = 9
+size = Vector3(10, 10, 10)
+
+[node name="player" parent="." instance=ExtResource("1_al1xc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0337158, 0.15810966, 1.2031978)
+
+[node name="shop" parent="." instance=ExtResource("2_r8hbh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5906929, 0.55867773, -0.97776175)

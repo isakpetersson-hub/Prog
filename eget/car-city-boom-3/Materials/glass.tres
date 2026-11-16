@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cbd2ggf331nmh"]
+
+[resource]
+albedo_color = Color(0.13294244, 0.13372657, 0.13014784, 1)
+roughness = 0.0
+anisotropy = 1.0
+refraction_scale = 0.01
+grow_amount = 0.33

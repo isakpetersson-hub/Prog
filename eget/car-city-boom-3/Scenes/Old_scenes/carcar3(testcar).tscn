@@ -1,0 +1,94 @@
+[gd_scene load_steps=6 format=3 uid="uid://cod01my2l2404"]
+
+[ext_resource type="Script" uid="uid://7saeaxbstbj8" path="res://Scripts/carcar_3.gd" id="1_21t44"]
+[ext_resource type="ArrayMesh" uid="uid://f7fnwbjwiiy2" path="res://Models/OLD/car1.obj" id="2_kbtv1"]
+[ext_resource type="ArrayMesh" uid="uid://io576526y5hu" path="res://Models/OLD/CCB3wheel.obj" id="3_lajeg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v158k"]
+size = Vector3(2.19, 0.815, 5.4413967)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h4fw4"]
+size = Vector3(2.025, 1.23, 2.053379)
+
+[node name="carcar3" type="VehicleBody3D"]
+mass = 250.0
+center_of_mass_mode = 1
+center_of_mass = Vector3(0, -0.66, -0.97)
+script = ExtResource("1_21t44")
+
+[node name="Car" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45711946, 0)
+mesh = ExtResource("2_kbtv1")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45711946, -0.24267101)
+shape = SubResource("BoxShape3D_v158k")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0861197, -1.0266895)
+shape = SubResource("BoxShape3D_h4fw4")
+
+[node name="fl" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.95, 0.080281034, 1.6723964)
+use_as_steering = true
+wheel_roll_influence = 0.05
+wheel_radius = 0.465
+wheel_friction_slip = 0.95
+suspension_travel = 0.4
+suspension_stiffness = 52.74
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="Ccb3Wheel" type="MeshInstance3D" parent="fl"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, 0)
+mesh = ExtResource("3_lajeg")
+skeleton = NodePath("../../..")
+
+[node name="bl" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.95, 0.07684781, -1.6837991)
+use_as_traction = true
+wheel_roll_influence = 0.05
+wheel_radius = 0.465
+wheel_friction_slip = 0.85
+suspension_travel = 0.4
+suspension_stiffness = 52.74
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="Ccb3Wheel" type="MeshInstance3D" parent="bl"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, 0)
+mesh = ExtResource("3_lajeg")
+skeleton = NodePath("../../../..")
+
+[node name="fr" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.95, 0.080281034, 1.6723964)
+use_as_steering = true
+wheel_roll_influence = 0.05
+wheel_radius = 0.465
+wheel_friction_slip = 0.95
+suspension_travel = 0.4
+suspension_stiffness = 52.74
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="Ccb3Wheel" type="MeshInstance3D" parent="fr"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, 0)
+mesh = ExtResource("3_lajeg")
+skeleton = NodePath("../../..")
+
+[node name="br" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, -8.742278e-08, 0, 8.742278e-08, 1, -0.95, 0.07684781, -1.6837993)
+use_as_traction = true
+wheel_roll_influence = 0.05
+wheel_radius = 0.465
+wheel_friction_slip = 0.85
+suspension_travel = 0.4
+suspension_stiffness = 52.74
+damping_compression = 1.5
+damping_relaxation = 2.0
+
+[node name="Ccb3Wheel" type="MeshInstance3D" parent="br"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, 0)
+mesh = ExtResource("3_lajeg")
+skeleton = NodePath("../../../..")

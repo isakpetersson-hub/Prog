@@ -1,0 +1,132 @@
+{
+	"burkskinka": {
+		"hold_anim": "temp/path",
+		"icon": "burkskinka.png",
+		"id": "burkskinka",
+		"name": "Burkskinka",
+		"sats": {
+
+		},
+		"scene": "burkskinka.tscn",
+		"type": "consume",
+		"use_anim": "temp/path",
+		"value": 20.0,
+		"weight": 1.0
+	},
+	"cola": {
+		"hold_anim": "temp/path",
+		"icon": "cola.png",
+		"id": "cola",
+		"name": "Cola",
+		"sats": {
+			"heal": 10.0
+		},
+		"scene": "cola.tscn",
+		"type": "consume",
+		"use_anim": "temp/path",
+		"value": 5.0,
+		"weight": 0.5
+	},
+	"icakuriren1": {
+		"icon": "icakuriren1.png",
+		"id": "icakuriren1",
+		"name": "ICA Kuriren (1)",
+		"sats": {
+
+		},
+		"scene": "icakuriren1.tscn",
+		"type": "relic",
+		"value": 20.0,
+		"weight": 0.5
+	},
+	"icakuriren2": {
+		"icon": "icakuriren2.png",
+		"id": "icakuriren2",
+		"name": "ICA Kuriren (2)",
+		"sats": {
+
+		},
+		"scene": "icakuriren2.tscn",
+		"type": "relic",
+		"value": 20.0,
+		"weight": 0.5
+	},
+	"icakuriren3": {
+		"icon": "icakuriren3.png",
+		"id": "icakuriren3",
+		"name": "ICA Kuriren (3)",
+		"sats": {
+
+		},
+		"scene": "icakuriren3.tscn",
+		"type": "relic",
+		"value": 20.0,
+		"weight": 0.5
+	},
+	"icakuriren4": {
+		"icon": "icakuriren4.png",
+		"id": "icakuriren4",
+		"name": "ICA Kuriren (4)",
+		"sats": {
+
+		},
+		"scene": "icakuriren4.tscn",
+		"type": "relic",
+		"value": 20.0,
+		"weight": 0.5
+	},
+	"moai": {
+		"icon": "moai.png",
+		"id": "moai",
+		"name": "Moai Statue",
+		"sats": {
+
+		},
+		"scene": "moai.tscn",
+		"type": "relic",
+		"value": 200.0,
+		"weight": 20.0
+	},
+	"murklor": {
+		"hold_anim": "temp/path",
+		"icon": "murklor.png",
+		"id": "murklor",
+		"name": "Murklor",
+		"sats": {
+
+		},
+		"scene": "murklor.tscn",
+		"type": "consume",
+		"use_anim": "temp/path",
+		"value": 20.0,
+		"weight": 1.0
+	},
+	"test2": {
+		"hold_anim": "default",
+		"icon": "test2.png",
+		"id": "test2",
+		"name": "test2",
+		"scene": "test2.tscn",
+		"stats": {
+
+		},
+		"type": 0,
+		"use_anim": "default",
+		"value": 10.0,
+		"weight": 1.0
+	},
+	"zingo": {
+		"hold_anim": "temp/path",
+		"icon": "zingo.png",
+		"id": "zingo",
+		"name": "Zingo",
+		"sats": {
+			"heal": 10.0
+		},
+		"scene": "zingo.tscn",
+		"type": "consume",
+		"use_anim": "temp/path",
+		"value": 5.0,
+		"weight": 0.5
+	}
+}

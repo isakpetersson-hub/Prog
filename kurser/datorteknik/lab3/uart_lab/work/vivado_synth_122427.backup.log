@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Feb 20 14:05:34 2026
+# Process ID: 122427
+# Current directory: /home/jakny046/Desktop/datorteknik/datorteknik/lab3/uart_lab/work
+# Command line: vivado -mode batch -source /courses/TSEA83/bin/build.tcl -notrace -journal vivado_synth.jou -log vivado_synth.log -tclargs synth uart_lab.vhd leddriver.vhd Basys3.xdc
+# Log file: /home/jakny046/Desktop/datorteknik/datorteknik/lab3/uart_lab/work/vivado_synth.log
+# Journal file: /home/jakny046/Desktop/datorteknik/datorteknik/lab3/uart_lab/work/vivado_synth.jou
+# Running On: muxen2-112.ad.liu.se, OS: Linux, CPU Frequency: 2100.000 MHz, CPU Physical cores: 12, Host memory: 16198 MB
+#-----------------------------------------------------------
+source /courses/TSEA83/bin/build.tcl -notrace
+
+############################################################################
+#### Build script 'Version 1.2 - 2024-05-09'
+
+Doing synth
+
+############################################################################
+#### Synthesizing...
+
+Reading: uart_lab.vhd
+Reading: leddriver.vhd
+Reading: Basys3.xdc
+Command: synth_design -top uart_lab -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 122447
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2249.156 ; gain = 406.582 ; free physical = 785 ; free virtual = 17382
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-9288] character ''0'' is not in type 'unsigned' [/home/jakny046/Desktop/datorteknik/datorteknik/lab3/uart_lab/uart_lab.vhd:64]
+ERROR: [Synth 8-9288] character ''0'' is not in type 'unsigned' [/home/jakny046/Desktop/datorteknik/datorteknik/lab3/uart_lab/uart_lab.vhd:85]
+INFO: [Synth 8-11252] unit 'behavioral' is ignored due to previous errors [/home/jakny046/Desktop/datorteknik/datorteknik/lab3/uart_lab/uart_lab.vhd:166]
+INFO: [Synth 8-10443] VHDL file '/home/jakny046/Desktop/datorteknik/datorteknik/lab3/uart_lab/uart_lab.vhd' is ignored due to errors
+INFO: [Synth 8-638] synthesizing module 'uart_lab' [/home/jakny046/Desktop/datorteknik/datorteknik/lab3/uart_lab/uart_lab.vhd:6]
+INFO: [Synth 8-256] done synthesizing module 'uart_lab' (0#1) [/home/jakny046/Desktop/datorteknik/datorteknik/lab3/uart_lab/uart_lab.vhd:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2322.125 ; gain = 479.551 ; free physical = 705 ; free virtual = 17303
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+10 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 20 14:05:44 2026...

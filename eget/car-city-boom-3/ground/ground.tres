@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b3mp0e0ow5acj"]
+
+[ext_resource type="Texture2D" uid="uid://dx1m2ywo26lrn" path="res://icon.svg" id="1_ellb5"]
+
+[resource]
+albedo_texture = ExtResource("1_ellb5")
+uv1_scale = Vector3(199.395, 199.395, 199.395)
+grow_amount = 0.314
+stencil_flags = 2
