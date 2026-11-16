@@ -1,0 +1,96 @@
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\chess-board-closeup-background-35435497.xnb
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Auto Chess.exe
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Auto Chess.deps.json
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Auto Chess.runtimeconfig.json
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Auto Chess.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Auto Chess.pdb
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.csproj.AssemblyReference.cache
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.AssemblyInfoInputs.cache
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.AssemblyInfo.cs
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.csproj.CoreCompileInputs.cache
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.csproj.CopyComplete
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\refint\Auto Chess.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.pdb
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.genruntimeconfig.cache
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\obj\Debug\net6.0-windows\ref\Auto Chess.dll
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\Chessboard.xnb
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\ChessPiecesArray.xnb
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\dot.xnb
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\promotion.xnb
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\promotion_black.xnb
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\capture.wma
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\capture.xnb
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\move-self.wma
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\move-self.xnb
+C:\Users\isak.petersson2.stud\source\repos\Auto Chess\bin\Debug\net6.0-windows\Content\menuFont.xnb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\capture.wma
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\move-self.wma
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\capture.xnb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\chess-board-closeup-background-35435497.xnb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\Chessboard.xnb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\ChessPiecesArray.xnb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\dot.xnb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\menuFont.xnb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\move-self.xnb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\promotion.xnb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Content\promotion_black.xnb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Auto Chess.exe
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Auto Chess.deps.json
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Auto Chess.runtimeconfig.json
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Auto Chess.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Auto Chess.pdb
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Programmering\repos\Auto Chess\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.csproj.AssemblyReference.cache
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.AssemblyInfoInputs.cache
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.AssemblyInfo.cs
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.csproj.CoreCompileInputs.cache
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.csproj.CopyComplete
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.dll
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\refint\Auto Chess.dll
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.pdb
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\Auto Chess.genruntimeconfig.cache
+C:\Programmering\repos\Auto Chess\obj\Debug\net6.0-windows\ref\Auto Chess.dll

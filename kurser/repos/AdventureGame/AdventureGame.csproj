@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RollForward>Major</RollForward>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Content\Base Character - Free\**" />
+    <EmbeddedResource Remove="Content\Base Character - Free\**" />
+    <None Remove="Content\Base Character - Free\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Content\2d_sprites_animation_bald.png" />
+    <None Remove="Content\2d_sprites_animation_hair.png" />
+    <None Remove="Content\Content.mgcb" />
+    <None Remove="Content\Player.png" />
+    <None Remove="Content\Player1 %281%29.png" />
+    <None Remove="Content\Player1.png" />
+    <None Remove="Content\Soldier.png" />
+    <None Remove="Content\Warrior_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
+  </ItemGroup>
+  <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+    <Message Text="Restoring dotnet tools" Importance="High" />
+    <Exec Command="dotnet tool restore" />
+  </Target>
+</Project>

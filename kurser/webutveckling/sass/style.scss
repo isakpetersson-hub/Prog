@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Lobster&display=swap');
+$mybackcolor: #eee5e4;
+$mainbred: 80%;
+$imagebackcolor: #c9c9c9;
+$imagebackcolorhover: #6d6a62;
+$textcolor:#6d6a62;
+$pricecolor:#393834;
+$imgdivwidth:250px;
+$imgdivheight:300px;
+$shadowcolor:#6d6a62;
+$fontsizebig:4em;
+$fontsizesmall:1.5em;
+$fontsizemedium:2em;
+
+body{
+	background-color: $mybackcolor;
+}
+.main{
+	width: $mainbred;
+	margin: auto;
+}
+.top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.shop{
+	color: $textcolor;
+	font-size: $fontsizebig;
+	font-family: lobster;
+}
+.menu1, .menu2, .menu3{
+	color: $textcolor;
+	font-size: $fontsizemedium;
+	font-family: kanit;
+}
+.menu1:hover{
+	border-top: 1px $textcolor solid;
+	border-bottom: 1px $textcolor solid;
+}
+.menu2:hover{
+	border-top: 1px $textcolor solid;
+	border-bottom: 1px $textcolor solid;
+}
+.menu:hover{
+	border-top: 1px $textcolor solid;
+	border-bottom: 1px $textcolor solid;
+}
+
+.icon{
+	display: flex;
+	justify-content: flex-end;
+	width: 30%;
+}
+.title{
+	color: $textcolor;
+	margin-top: 80px;
+	margin-bottom: 70px;
+	font-family: kanit;
+}
+.card{
+	background-color: $imagebackcolor;
+	border: 1px $shadowcolor solid;
+	width:$imgdivwidth;
+	height: $imgdivheight;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 2px 2px;
+}
+.card:hover{
+	background-color: $imagebackcolorhover;
+	border: 1px $shadowcolor solid;
+	width:$imgdivwidth;
+	height: $imgdivheight;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 4px 4px;
+}
+img{
+	width: 70%;
+}
+.price{
+	font-size:$fontsizesmall;
+	font-family: Anton;
+	color:$pricecolor ;
+}
+.container{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.bottom{
+	display: flex;
+	justify-content: space-between;
+}
+ul{
+	font-family: kanit;
+	font-weight: bold;
+}

@@ -1,0 +1,18 @@
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\bin\Debug\net5.0-windows\Evil or nice.exe
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\bin\Debug\net5.0-windows\Evil or nice.deps.json
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\bin\Debug\net5.0-windows\Evil or nice.runtimeconfig.json
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\bin\Debug\net5.0-windows\Evil or nice.runtimeconfig.dev.json
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\bin\Debug\net5.0-windows\Evil or nice.dll
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\bin\Debug\net5.0-windows\ref\Evil or nice.dll
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\bin\Debug\net5.0-windows\Evil or nice.pdb
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\Evil or nice.csproj.AssemblyReference.cache
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\Evil_or_nice.Form1.resources
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\Evil or nice.csproj.GenerateResource.cache
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\Evil or nice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\Evil or nice.AssemblyInfoInputs.cache
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\Evil or nice.AssemblyInfo.cs
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\Evil or nice.csproj.CoreCompileInputs.cache
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\Evil or nice.dll
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\ref\Evil or nice.dll
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\Evil or nice.pdb
+C:\Users\isak.petersson2.stud\source\repos\Evil or nice\Evil or nice\obj\Debug\net5.0-windows\Evil or nice.genruntimeconfig.cache

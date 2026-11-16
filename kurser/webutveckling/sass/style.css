@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Lobster&display=swap");
+body {
+  background-color: #eee5e4; }
+
+.main {
+  width: 80%;
+  margin: auto; }
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.shop {
+  color: #6d6a62;
+  font-size: 4em;
+  font-family: lobster; }
+
+.menu1, .menu2, .menu3 {
+  color: #6d6a62;
+  font-size: 2em;
+  font-family: kanit; }
+
+.menu1:hover {
+  border-top: 1px #6d6a62 solid;
+  border-bottom: 1px #6d6a62 solid; }
+
+.menu2:hover {
+  border-top: 1px #6d6a62 solid;
+  border-bottom: 1px #6d6a62 solid; }
+
+.menu:hover {
+  border-top: 1px #6d6a62 solid;
+  border-bottom: 1px #6d6a62 solid; }
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%; }
+
+.title {
+  color: #6d6a62;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  font-family: kanit; }
+
+.card {
+  background-color: #c9c9c9;
+  border: 1px #6d6a62 solid;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px; }
+
+.card:hover {
+  background-color: #6d6a62;
+  border: 1px #6d6a62 solid;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px; }
+
+img {
+  width: 70%; }
+
+.price {
+  font-size: 1.5em;
+  font-family: Anton;
+  color: #393834; }
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.bottom {
+  display: flex;
+  justify-content: space-between; }
+
+ul {
+  font-family: kanit;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,143 @@
+*{
+	box-sizing: border-box;	/* Ser till att padding och border räknas in i width istället för att läggas på efter. */
+}
+
+body{
+	font-family: arial, sans-serif;
+	font-size: 16px;
+}
+
+h2{
+	margin: 10px 0px 12px 0px;
+	font-size: 18px;
+}
+
+.leftnav{
+	width: 25%;
+	position: fixed; 	/* Fixed så att den inte följer med när resten av sidan scrollar. */
+  z-index: 1; 			/* Den ska ligga överst. */
+  top: 8px; 				/* Menyn ska hålla sig längst upp. Default margin på body är 8px */
+}
+
+.rightpanel{
+	width: 70%;
+	margin-left: 25%;	/* Samma som vänstermenyn, för att den inte ska hamna under den. */
+}
+
+
+/******** Navigeringsmenyn till vänster ********/
+
+nav a{
+	color: #9293a1;
+	display: block;
+	margin-bottom: 4px;
+	padding: 6px 0 4px 0;
+	text-decoration: none;
+	border: 1px solid #fff;
+	width: 90%;
+}
+
+nav a:link {
+  color: #9293a1;
+}
+
+nav a:visited {
+  color: #9293a1;
+}
+
+nav a:hover, .activepage{
+  color: #9293a1;
+  padding-left: 6px;
+  border: 1px solid #37444d;
+  border-radius: 4px;
+}
+
+nav a:active {
+  color: #000;
+}
+
+.activepage{
+	background-color: #37444d;
+	color: #fff;
+}
+
+
+
+/******** Formulären ramas in av .formbox********/
+
+.formbox{
+	overflow: auto;
+	background-color: #f8f9fa;
+	border: 1px solid #dcdee0;
+	border-radius: 3px;
+	margin-bottom: 30px;
+	padding: 15px;
+}
+
+.form_lefthalf , .form_righthalf{
+	width: 49%;
+	float: left;  /* OBS! Ändras av righthalf här under */
+}
+
+.form_righthalf{
+	float: right;
+}
+
+.form_left70{
+	width: 69%;
+	float: left;
+}
+
+.form_right30{
+	width: 29%;
+	float: right;
+}
+
+input, select, .submit{
+	height: 34px;
+	font-size: 16px;
+	width: 100%;
+	margin: 3px 0 15px 0;
+	padding: 7px 0px 7px 3px;
+	border: 1px solid #dcdee0;
+	border-radius: 4px;
+}
+
+.submit{
+	background-color: #6c757d;
+	color: #fff;
+}
+
+.submit:hover{
+	background-color: #37444d;
+}
+
+
+/******** Tabellerna ********/
+
+table{
+	width: 90%;
+	text-align: left;
+	margin: 0 auto 0 auto;
+	border-collapse: collapse;
+}
+
+thead tr{
+	border-bottom: 1px solid black;
+}
+
+/* Alla jämna rader blir mörka */
+tbody tr:nth-child(even) {
+	background-color: #37444d;
+	color: #fff;
+}
+
+td, th{
+	padding: 10px 0 5px 5px;
+}
+
+/* Alla "första" celler i varje rad (första kolumnen) */
+td:nth-child(1) {
+    font-weight: bold;
+    width: 50px;
+}

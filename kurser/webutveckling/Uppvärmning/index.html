@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Uppvärmnning</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="leftside">
+		<div class="divfortext">
+			<div class="title">Start</div>
+			<a href=""><div class="undertext">Start</div></a>
+		</div>
+		<div class="divfortext">
+			<div class="title">Modifiera</div>
+			<a href=""><div class="undertextmarkerad">Lägg till</div></a>
+			<a href="redigera.html"><div class="undertext">Redigera</div></a>
+		</div>
+		<div class="divfortext">
+			<div class="title">Lista</div>
+			<a href="subject.html"><div class="undertext">Alla Ämnen</div></a>
+			<a href=""><div class="undertext">Alla elever</div></a></a>
+		</div>
+		<div class="divfortext">
+			<div class="title">Admin</div>
+			<a href=""><div class="undertext">Källkoder</div></a>
+			<a href=""><div class="undertext">Återställ databasen</div></a>
+		</div>
+	</nav>
+	<div class="rightside">
+		<h1>Lägg till en post</h1>
+		<div class="inputdiv">
+			<form>
+				<h2>Ny elev:</h2>
+				<div class="inputandlabel">
+					<label for="fnamn" class="input">Förnamn</label><br>
+					<input type="text" name="fnamn" class="inputtext">				
+				</div>
+				<div class="inputandlabel">
+					<label for="enamn" class="input">Efternamn</label><br>
+					<input type="text" name="enamn" class="inputtext">					
+				</div>
+				<div class="inputandlabel">
+					<label for="fdag" class="input">Födelsedag</label><br>
+					<input type="date" name="fdag" class="inputtext">
+				</div>
+				<div class="submitdiv">
+					<input type="submit" name="submit" class="submit" value="Lägg till">
+				</div>
+			</form>
+		</div>
+		<div class="inputdiv">
+			<form>
+				<h2>Nytt ämne:</h2>
+				<div class="inputandlabel">
+					<label for="namn" class="input">Namn på ämnet</label><br>
+					<input type="text" name="namn" class="inputtextwide">				
+				</div>
+				<div class="inputandlabel">
+					<label for="kod" class="input">Ämnes kod</label><br>
+					<input type="text" name="kod" class="inputtextshort">					
+				</div>
+				<div class="inputandlabel">
+					<label for="startdatum" class="input">Start datum</label><br>
+					<input type="date" name="startdatum" class="inputtext">
+				</div>
+				<div class="inputandlabel">
+					<label for="slutdatum" class="input">Slut datum</label><br>
+					<input type="date" name="slutdatum" class="inputtext">
+				</div>
+				<div class="submitdiv">
+					<input type="submit" name="submit" class="submit" value="Lägg till">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

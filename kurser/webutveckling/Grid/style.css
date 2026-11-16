@@ -1,0 +1,113 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-weight: bold;
+	font-size: 2em;
+	font-family: sans-serif;
+}
+.container > div, .container2 > div, .container3 > div, .container4 > div{
+	display: flex;
+	background-color: #DDDDDD80;
+	border: 1px solid black;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/**** Första Container ****/
+.container{
+	width: 80%;
+	display: grid;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	grid-template-rows: 200px 200px 200px 200px;
+	border-radius: 10px;
+	margin: auto;	
+	background-color: #20B020;
+	grid-template-areas: 'aBox bBox bBox bBox'
+						 'aBox . . .'
+						 'aBox . . hBox'
+						 'aBox iBox iBox hBox'
+}
+.container .item1{
+	grid-area: aBox;
+}
+.container .item2{
+	grid-area: bBox;
+}
+.container .item8{
+	grid-area: hBox;
+}
+.container .item9{
+	grid-area: iBox;
+}
+
+/**** Container2 ****/
+.container2{
+	width: 80%;
+	display: grid;
+	background-color: blue;
+	grid-template-rows: 200px 200px 200px 200px;
+	grid-template-columns: auto auto auto auto;
+	grid-row-gap: 20px;
+	grid-column-gap: 10px;
+	margin: auto;
+	border-radius: 10px;
+	grid-template-areas: '. bBox bBox .'
+	                     'dBox bBox bBox eBox'
+	                     'dBox . . eBox'
+	                     'hBox hBox iBox iBox'
+}
+
+.container2 .item2{
+	grid-area: bBox;
+}
+
+.container2 .item4{
+	grid-area: dBox;
+}
+.container2 .item5{
+	grid-area: eBox;
+}
+.container2 .item8{
+	grid-area: hBox;
+}
+
+.container2 .item9{
+	grid-area: iBox;
+}
+
+/**** Container3 ****/
+.container3{
+	width: 80%;
+	display: grid;
+	background-color: orange;
+	grid-template-columns: auto auto auto auto auto;	
+	grid-template-rows: 200px 300px 300px 200px 70px;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	margin: auto;
+	border-radius: 10px;
+	grid-template-areas: 'aBox aBox aBox aBox aBox'
+						 'bBox bBox cBox cBox .'
+						 'bBox bBox cBox cBox .'
+						 '. gBox gBox gBox gBox'
+						 '. iBox iBox iBox iBox'
+}
+.container3 .item1{
+	grid-area: aBox;
+}
+.container3 .item2{
+	grid-area: bBox;
+}
+.container3 .item3{
+	grid-area: cBox;
+}
+.container3 .item7{
+	grid-area: gBox;
+}
+.container3 .item9{
+	grid-area: iBox;
+}

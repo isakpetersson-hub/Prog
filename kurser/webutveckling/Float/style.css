@@ -1,0 +1,66 @@
+div{
+	padding: 2px;
+	border: 2px black solid;
+	width: 150px;
+	height: 100px;
+}
+.green{
+	background-color: orange;
+	width: 500px;
+	margin: 8px;
+
+}
+.blue{
+	background-color: orange;
+	float: left;
+	margin: 8px;
+
+}
+.red{
+	background-color: orange;
+	float: left;
+	margin: 8px;
+
+
+}
+.yellow{
+	background-color: orange;
+	float: left;
+	margin: 8px;
+
+
+}
+.orange{
+	background-color: orange;
+	width: 500px;
+	margin: 150px 8px;
+}
+.green1{
+	background-color: green;
+	float: left;
+}
+.blue1{
+	background-color: blue;
+	float: left;
+}
+.red1{
+	background-color: red;
+	clear: both;
+	float: left;
+}
+.yellow1{
+	background-color: yellow;
+	float: left;
+}
+.green2{
+	background-color: green;
+	clear: both;
+	float: left;
+
+}
+
+.box{
+	background-color: orange;
+	width: 200px;
+	height: 200px;
+}

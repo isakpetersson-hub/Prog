@@ -1,0 +1,620 @@
+/*Importerade fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+/*Gemensamma taggar*/
+
+body{
+	background-color: #8da8c2;
+	margin: auto;
+    display: block;
+    width: 950px;
+}
+
+.banner{
+	width: 950px;
+}
+
+.spelforum{
+	display: block;
+	float: left;
+	height: 74px;
+	width: 380px;
+}
+
+.toptext{
+	background-image: url(bilder/blackback_10x74.gif);
+	color: white;
+	height: 59px;
+	width: 120px;
+	float: left;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.toptextblå{
+	background-image: url(bilder/blueback_10x74.gif);
+	color: white;
+	height: 59px;
+	width: 120px;
+	float: left;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.search{
+	background-image: url(bilder/blackback_10x74.gif);
+	color: white;
+	height: 64px;
+	width: 210px;
+	float: left;
+	padding-top: 10px;
+	font-size: 35px;
+	align-content: left;
+}
+
+.searchbarTop{
+	width: 150px;
+	margin-left: 5px;
+}
+
+/*Tagar för sida 1 (index)*/
+
+.playstaion1{
+	padding: 10px 10px 10px 0px;
+	width: 630px;
+	height: 300px;
+	float: left;
+}
+
+.tophöger1{
+	float: left;
+}
+
+.inlogg1{
+	float: left;
+	padding: 10px 0px 10px 0px;
+	background-color: white;
+	margin: 10px 0px 10px 0px;
+	width: 310px;
+	height: 85px;
+}
+
+.user1{
+	margin: 10px 0px 0px 25px;
+}
+
+.medlem1{
+	text-align: center;
+	width: 80px;
+}
+
+.password1{
+	margin: 10px 0px 0px 25px;
+}
+
+.loggain1{
+	text-align: center;
+	width: 80px;
+	margin-top: 10px;
+}
+
+.trådar1{
+	background-color: white;
+	clear: left;
+	width: 310px;
+}
+
+.texthead1{
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+.text1{
+	margin: 5px 0px 0px 25px;
+	height: 185px;
+	width: 260px;
+	font-size: 15px;
+}
+
+.textblå1{
+	background-color: #8da8c2;
+}
+
+.bottom1{
+	float: left;
+	padding-bottom: 10px;
+}
+
+.informationruta1{
+	background-color: white;
+	float: left;
+	width: 270px;
+	margin-right: 10px;
+	height: 410px;
+	padding: 6px 20px 0px 20px;
+}
+
+.informationrutahöger1{
+	background-color: white;
+	float: left;
+	width: 270px;
+	height: 410px;
+	padding: 6px 20px 0px 20px;
+}
+
+.titel1{
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	width: 270px;
+	margin-bottom: 4px;
+	font-weight: bold;
+}
+
+.bild1{
+	width: 270px;
+	height: 100px;
+}
+
+.bildhöger1{
+	width: 270px;
+	height: 120px;
+}
+
+.head1{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.textbody1{
+	font-size: 13px;
+	height: 45px;
+}
+
+.bar1{
+	background-color: goldenrod;
+	height: 4px;
+	border: none;
+	border-radius: 5px;
+}
+
+.under1{
+	clear: left;
+	background-color: white;
+	width: 950px;
+	height: 50px;
+}
+
+.undertext1{
+	float: left;
+	margin-top: 15px;
+	padding:0px 60px 0px 60px;
+	font-family: 'Gruppo', cursive;
+	font-weight: bold;
+}
+
+/*Tagar för sidan 2 (merch)*/
+
+.bottom2{
+	background-color: white;
+	float: left;
+	margin-top: 10px;
+	width: 950px;
+}
+
+.menurow2{
+	position: relative;
+	display: inline-block;
+  float: left;
+	font-family: 'Montserrat', sans-serif;
+	color: darkgray;
+}
+
+.menuer2{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.menuhead2{
+	padding-left: 100px;
+}
+
+.menurow2:hover .menuer2{
+  display: block;
+}
+
+.bar2{
+	clear: left;
+	width: 860px;
+	border: none;
+	height: 1px;
+	background-color: darkgray;
+}
+
+.imgtopdiv2{
+	border: solid black 1px;
+	float: left;
+	padding: 15px;
+	margin: 50px 5px 0px 15px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color:darkgray ;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0), 0 10px 10px 0 rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+
+.imgtop2{
+	width: 418px;
+}
+
+.bottomtext2{
+	font-size: 12px;
+}
+
+.köp2{
+	background-color: #3ecd32;
+	color: white;
+	font-size: 10px;
+	width: 60px;
+	margin-left: 185px;
+	height: 20px;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 5px;
+}
+
+.imgbottomdiv2{
+	border: solid black 1px;
+	float: left;
+	padding: 15px;
+	margin: 50px 5px 0px 15px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color:darkgray ;
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	width: 261px;
+}
+
+.imgbottom2{
+	width: 260px;
+}
+
+.köpbottom2{
+	background-color: #3ecd32;
+	color: white;
+	font-size: 10px;
+	width: 60px;
+	margin-left: 106px;
+	height: 20px;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 5px;
+}
+
+.underbar2{
+	background-color: black;
+	height: 1px;
+	border: none;
+	width: 850px;
+}
+
+.under2{
+	clear: left;
+	background-color: white;
+	width: 950px;
+	height: 50px;
+	padding-top: 15px;
+}
+
+.undertext2{
+	float: left;
+	padding: 0px 60px 0px 70px;
+	font-family: 'Caveat', cursive;
+	font-size: 20px;
+	border-right: solid 1px black;
+}
+
+.undertextright2{
+	float: left;
+	padding-left: 70px;
+	padding-right: 60px;
+	font-family: 'Caveat', cursive;
+	font-size: 20px;
+}
+
+/*Tagar till sida 3*/
+
+.bottom3{
+	background-color:  #9c9c9c;
+	margin-top: 10px;
+	float: left;
+	width: 950px;
+}
+
+.head3{
+	color: white;
+	text-align: center;
+	font-size: 45px;
+	font-family: 'Gruppo', cursive;
+	font-weight: bold;
+}
+
+.topbar3{
+	background-color: white;
+	height: 1px;
+	border: none;
+}
+
+.nyttforum3{
+	float: left;
+	background-color: white;
+	width: 280px;
+	margin-left: 10px;
+	border: solid black 1px;
+	font-family: 'Gruppo', cursive;
+	height: 449px;
+	font-weight: bold;
+}
+
+.nytthead3{
+	font-size: 25px;
+	margin: 5px 0px 0px 5px;
+	clear: left;
+}
+
+.nytttext3{
+	float: left;
+	font-size: 15px;
+	margin: 10px 0px 0px 5px;
+}
+
+.nyttbutton3{
+	float: right;
+	background-color: #f13e5a;
+	color: white;
+	font-size: 12px;
+	width: 30px;
+	height: 15px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 5px 10px 0px 0px;
+	padding-top: 3px;
+}
+
+.spelsnack3{
+	float: left;
+	background-color: white;
+	border: solid black 1px;
+	font-family: 'Gruppo', cursive;
+	margin-left: 10px;
+	width: 635px;
+	font-weight: bold;
+}
+
+.spelsnacksökväg3{
+	color: #f13e5a;
+	font-size: 15px;
+	margin: 10px 0px 0px 5px;
+}
+
+.spelsnackhead3{
+	margin: 10px 0px 0px 5px;
+	font-size: 25px;
+}
+
+.spelsnacktext3{
+	margin-left: 5px;
+	font-size: 15px;
+}
+
+.spelsnacksida3{
+	font-size: 10px;
+	margin: 10px 0px 20px 5px;
+	float: left;
+}
+
+.spelsnacksök3{
+	float: right;
+	margin-right:10px;
+}
+
+.searchbarbutton{
+	background-color:#f13e5a ;
+	border-radius: 5px;
+	color: white;
+	border-top-color: gray;
+	border-left-color: gray;
+}
+
+.trådarhead3{
+	background-color: #f13e5a;
+	color: white;
+	padding: 10px;
+}
+
+.trådar3{
+	font-family: 'Gruppo', cursive;
+	font-weight: bold;
+	float: left;
+	margin: 10px 0px 0px 10px;
+	width: 635px;
+	background-color: white;
+	border: solid black 1px;
+}
+
+.trådarbox3{
+	background-color: whitesmoke;
+	margin-top: 10px;
+	width: 635px;
+	height: 75px;
+}
+
+.material-symbols-outlined {
+	float: left;
+	color: grey;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.symbol3{
+	float: left;
+	padding: 8px 15px 10px 15px;
+}
+
+.nummer3{
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.trådartext3{
+	float: left;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.trådartextröd3{
+	float: left;
+	color: #f13e5a ;
+	font-size: 10px;
+	margin-top: 6px;
+	width: 200px;
+}
+
+.Bluebird3{
+	float: right;
+	font-size: 15px;
+	width: 80px;
+	margin: 20px 50px 0px 50px;
+}
+
+.trådartextdiv3{
+	float: left;
+	width: 500px;
+}
+
+.trådarbottom3{
+	background-color: #f13e5a;
+	width:635px ;
+	height: 40px;
+}
+
+.checkbox3{
+	float: left;
+	margin-top: 30px;
+}
+
+.dropdown3{
+	float: left;
+	margin: 10px 0px 0px 420px;
+}
+
+.input3{
+	float: left;
+	margin: 8px 10px 0px 10px;
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+	width: 50px;
+	border-right-color: darkgray;
+	border-bottom-color: darkgray;
+	border-left-color: gray;
+	border-top-color: gray;
+}
+
+.reglerdiv3{
+	float: left;
+	font-family: 'Gruppo', cursive;
+	background-color: white;
+	border: 1px black solid;
+	width: 452px;
+	padding-left: 10px;
+	margin: 10px 10px 0px 10px;
+	height: 156px;
+}
+
+.relgerhead3{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 8px 0px 10px 0px;
+}
+
+.reglertext3{
+	margin-bottom: 10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.textareadiv3{
+	float: left;
+	width: 432px;
+	margin-top: 10px;
+	background-color: white;
+	border: 1px black solid;
+	height: 136px;
+	padding: 10px;
+}
+
+.textarea3{
+	width: 425px;
+	height: 80px;
+}
+
+.TextAreaSendBottom3{
+	float: right;
+	margin: 5px 5px 0px 0px;
+}
+
+.rensa3{
+	float: right;
+	margin: 5px 20px 0px 0px;
+}
+
+.under3{
+	color: white;
+	clear: left;
+	width: 950px;
+	height: 50px;
+	padding-top: 1px;
+}
+
+.underbar3{
+	background-color: white;
+	height: 1px;
+	border: none;
+	width: 850px;
+}
+
+.undertext3{
+	float: left;
+	padding: 0px 60px 0px 70px;
+	font-family: 'Caveat', cursive;
+	font-size: 20px;
+	border-right: solid 1px white;
+}
+
+.undertextright3{
+	float: left;
+	padding: 0px 60px 0px 70px;
+	font-family: 'Caveat', cursive;
+	font-size: 20px;
+}

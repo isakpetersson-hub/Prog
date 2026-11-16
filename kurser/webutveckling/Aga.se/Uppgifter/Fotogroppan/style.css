@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital@1&display=swap');
+.body{
+    margin: auto;
+    display: block;
+    width: 60%;
+}
+.bild{
+    width: 100%;
+}
+.meny{
+    display: block;
+    margin: auto;
+    width: 650px;
+    align-content: center;
+}
+li{
+    float: left;
+    padding: 0px 50px;
+    list-style-type: none;
+}
+.border{
+    border: solid black 2px;
+    border-radius: 50px;
+}
+.line{
+    clear: left;
+}
+.line1{
+    width: 100px;
+    float: left;
+}
+.line2{
+    width: 860px;
+    float: left;
+}
+.feb{
+    float: left;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+
+}
+.line0{
+    margin: 40px 0px;
+    float: left;
+}
+p{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    clear: left;
+}
+.img1{
+    float: left;
+    width: 47%;
+    margin: 0px 60px 0px 0px;
+}
+.img2{
+    float: left;
+    width: 47%;
+}
+.img3{
+    float: left;
+    width: 100%;
+}
+.copy{
+    font-size: 10px;
+}
+

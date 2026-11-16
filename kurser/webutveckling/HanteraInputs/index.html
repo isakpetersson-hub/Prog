@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Hantera user input</title>
+    <style>.box{width:300px; height:150px; background-color: #17a2b8; float: left;}
+      main{float: left; margin: 20px;}
+      .field{margin-bottom: 10px;
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <header id="page-header">
+        <h1 id="main-heading">Hantera user input</h1>
+      </header>
+      <div>
+        <main>
+          <form id="comment-form">
+            <div class="field">
+              <label for="first-name">Förnamn</label>
+              <input id="first-name" type="text" class="form-control">
+            </div>
+            <div class="field">
+              <label for="last-name">Efternamn</label>
+              <input id="last-name" type="text">
+            </div>
+            <button type="submit" id="submit-button">Submit</button>
+          </form>
+        </main>
+        <aside id="sidebar" class="box">
+        </aside>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+

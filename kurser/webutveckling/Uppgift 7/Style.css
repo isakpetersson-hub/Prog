@@ -1,0 +1,56 @@
+table{
+	border: 1px solid;
+	border-color: darkslategrey lightgrey lightgrey darkslategrey;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+	background: #dc3545;
+}
+td{
+    border: 1px solid;
+	border-color: darkslategrey grey grey darkslategrey;
+}
+th{
+	border: 1px solid;
+	border-color: darkslategrey grey grey darkslategrey;
+	width: 60px;
+}
+.Cell{
+	width: 250px;
+	text-align: right;
+}
+.Cell1{
+	text-align: right;
+}
+
+.Cell2{
+	text-align: left;
+}
+
+.Cell4{
+    text-align: left;
+}
+.Cell0{
+	text-align: right;
+}
+.Cell3{
+	text-align: right;
+}
+.text{
+	text-align: center;
+}
+.Text{
+	text-align: right;
+	background-color: grey;
+}
+.TEXT{
+	text-align: center;
+	background-color: orange;
+}
+.Lorem{
+	text-align: center;
+	font-size: 30px;
+}
+img{
+	align-content: center;
+}

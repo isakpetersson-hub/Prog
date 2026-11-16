@@ -1,0 +1,25 @@
+h1{
+	font-size: 50px;
+	text-align: center;
+}
+
+img{
+	width: 500px;
+	outline: black solid 5px;
+	margin: 5px 10px 50px 10px;
+}
+p{
+	font-size: 20px;
+}
+body{
+	background-color: lightcyan;
+}
+
+.Hem{
+  background-color: royalblue;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}

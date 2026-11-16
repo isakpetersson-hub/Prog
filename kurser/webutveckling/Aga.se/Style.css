@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+body{
+		background-image: url('bilder/0_BSvNSp3toRq8rmjU.png');
+		background-size: 3000px;
+}
+H1{
+	font-family: 'Pinyon Script', cursive;
+	font-size: 50px;
+}
+H2{
+	font-family: 'Pinyon Script', cursive;
+    font-size: 50px;
+}
+p{
+margin: 5px 2px 20px 2px;
+font-family: "arial";
+font-family: 'Ephesis', cursive;
+font-size: 30px;
+}
+hr{
+	margin: 30px 20px;
+}
+img{
+	background-color: white;
+	border: double black;
+	width: 300px;
+	margin: 10px;
+	padding: 15px;
+}
+a:link, a:visited {
+  background-color: dimgrey;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: grey;
+}

@@ -1,0 +1,10 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Programmering/repos/Auto Chess/Content/capture.mp3","C:/Programmering/repos/Auto Chess/Content/bin/Windows/Content/capture.xnb","SoundEffectProcessor","SoundEffectContent",6889,78441,0,171863
+"C:/Programmering/repos/Auto Chess/Content/chess-board-closeup-background-35435497.jpg","C:/Programmering/repos/Auto Chess/Content/bin/Windows/Content/chess-board-closeup-background-35435497.xnb","TextureProcessor","Texture2DContent",90890,2595285,0,0719143
+"C:/Programmering/repos/Auto Chess/Content/Chessboard.png","C:/Programmering/repos/Auto Chess/Content/bin/Windows/Content/Chessboard.xnb","TextureProcessor","Texture2DContent",898055,2755681,0,045464
+"C:/Programmering/repos/Auto Chess/Content/ChessPiecesArray.png","C:/Programmering/repos/Auto Chess/Content/bin/Windows/Content/ChessPiecesArray.xnb","TextureProcessor","Texture2DContent",187926,172885,0,0055976
+"C:/Programmering/repos/Auto Chess/Content/dot.png","C:/Programmering/repos/Auto Chess/Content/bin/Windows/Content/dot.xnb","TextureProcessor","Texture2DContent",80292,49000085,0,6410001
+"C:/Programmering/repos/Auto Chess/Content/menuFont.spritefont","C:/Programmering/repos/Auto Chess/Content/bin/Windows/Content/menuFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,136223,0,0730899
+"C:/Programmering/repos/Auto Chess/Content/move-self.mp3","C:/Programmering/repos/Auto Chess/Content/bin/Windows/Content/move-self.xnb","SoundEffectProcessor","SoundEffectContent",3433,36969,0,0889138
+"C:/Programmering/repos/Auto Chess/Content/promotion_black.png","C:/Programmering/repos/Auto Chess/Content/bin/Windows/Content/promotion_black.xnb","TextureProcessor","Texture2DContent",15477,176093,0,0054197
+"C:/Programmering/repos/Auto Chess/Content/promotion.png","C:/Programmering/repos/Auto Chess/Content/bin/Windows/Content/promotion.xnb","TextureProcessor","Texture2DContent",14505,177097,0,0033009

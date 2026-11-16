@@ -1,0 +1,13 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Programmering/repos/AdventureGame/Content/32x32_map_tile v3.1 [MARGINLESS].png","C:/Programmering/repos/AdventureGame/Content/bin/Windows/tilemap32.xnb","TextureProcessor","Texture2DContent",167816,2732117,0,1292939
+"C:/Programmering/repos/AdventureGame/Content/groundinfo.png","C:/Programmering/repos/AdventureGame/Content/bin/Windows/groundinfo.xnb","TextureProcessor","Texture2DContent",10758,245845,0,0068158
+"C:/Programmering/repos/AdventureGame/Content/MenuFont.spritefont","C:/Programmering/repos/AdventureGame/Content/bin/Windows/MenuFont.xnb","FontDescriptionProcessor","SpriteFontContent",2069,70687,0,0634883
+"C:/Programmering/repos/AdventureGame/Content/overworld.mp3","C:/Programmering/repos/AdventureGame/Content/bin/Windows/overworld.xnb","SongProcessor","SongContent",2613635,127,0,7851851
+"C:/Programmering/repos/AdventureGame/Content/PickItem.wav","C:/Programmering/repos/AdventureGame/Content/bin/Windows/PickItem.xnb","SoundEffectProcessor","SoundEffectContent",9548,9609,0,0838625
+"C:/Programmering/repos/AdventureGame/Content/Player1.png","C:/Programmering/repos/AdventureGame/Content/bin/Windows/Player1.xnb","TextureProcessor","Texture2DContent",125142,19660885,0,5051311
+"C:/Programmering/repos/AdventureGame/Content/Steps_Grass (1).wav","C:/Programmering/repos/AdventureGame/Content/bin/Windows/Steps_Grass.xnb","SoundEffectProcessor","SoundEffectContent",32748,32809,0,0863288
+"C:/Programmering/repos/AdventureGame/Content/Steps_Sand.wav","C:/Programmering/repos/AdventureGame/Content/bin/Windows/Steps_Sand.xnb","SoundEffectProcessor","SoundEffectContent",30958,31019,0,0822838
+"C:/Programmering/repos/AdventureGame/Content/Steps_ShallowWater.wav","C:/Programmering/repos/AdventureGame/Content/bin/Windows/Steps_ShallowWater.xnb","SoundEffectProcessor","SoundEffectContent",33322,33383,0,0877577
+"C:/Programmering/repos/AdventureGame/Content/Steps_Stone.wav","C:/Programmering/repos/AdventureGame/Content/bin/Windows/Steps_Stone.xnb","SoundEffectProcessor","SoundEffectContent",31150,31211,0,0795556
+"C:/Programmering/repos/AdventureGame/Content/Steps_Wood.wav","C:/Programmering/repos/AdventureGame/Content/bin/Windows/Steps_Wood.xnb","SoundEffectProcessor","SoundEffectContent",22592,22653,0,0852789
+"C:/Programmering/repos/AdventureGame/Content/UnlockAndOpen.wav","C:/Programmering/repos/AdventureGame/Content/bin/Windows/UnlockAndOpen.xnb","SoundEffectProcessor","SoundEffectContent",49346,49407,0,0844472

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <style>
+        .blue{
+            background-color: blue;
+        }
+        .brown{
+            background-color: brown;
+        }
+        .green{
+            background-color: green;
+        }
+        .none{
+            background-color: white;
+        }
+        h4{margin: 5px 0px 0px 0px;}
+        .list-group-item{
+            border: 1px solid lightgray;
+            margin: 10px 0px;
+            width: 100%;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: left;
+        }
+        .container{
+            width: 70%;
+            margin: 0 auto 0 auto;
+            font-family: arial, sans-serif;
+            text-align: center;
+        }
+        .btn{padding: 5px 10px;}
+        .text-right{text-align: right;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="row">
+            <h1 id="page-title" class="text-center">Ändra mina färger!</h1>
+        </header>
+            <nav>
+                <button id="color-button-blue" class="btn">Blå</button>
+                <button id="color-button-brown" class="btn">Brun</button>
+                <button id="color-button-green" class="btn">Grön</button>
+                <button id="color-button-none" class="btn">Ingen</button>
+            </nav>
+        <main id="blogposts">
+            <article class="list-group-item">
+                <h4>En blog post</h4>
+                <p>Idag har jag ätit bruna bönor med fläsk. Jag ger den lunchen betyget 3 av 5.</p>
+            </article>
+        </main>
+        <div>
+            <div class="text-right">
+                <button class="btn btn-secondary" id="add-post">Lägg till Post</button>
+                <button class="btn btn-secondary" id="remove-post">Ta bort Post</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

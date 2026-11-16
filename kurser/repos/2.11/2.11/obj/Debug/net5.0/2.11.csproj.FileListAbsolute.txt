@@ -1,0 +1,15 @@
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\bin\Debug\net5.0\2.11.exe
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\bin\Debug\net5.0\2.11.deps.json
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\bin\Debug\net5.0\2.11.runtimeconfig.json
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\bin\Debug\net5.0\2.11.runtimeconfig.dev.json
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\bin\Debug\net5.0\2.11.dll
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\bin\Debug\net5.0\ref\2.11.dll
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\bin\Debug\net5.0\2.11.pdb
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\obj\Debug\net5.0\2.11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\obj\Debug\net5.0\2.11.AssemblyInfoInputs.cache
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\obj\Debug\net5.0\2.11.AssemblyInfo.cs
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\obj\Debug\net5.0\2.11.csproj.CoreCompileInputs.cache
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\obj\Debug\net5.0\2.11.dll
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\obj\Debug\net5.0\ref\2.11.dll
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\obj\Debug\net5.0\2.11.pdb
+C:\Users\isak.petersson2.stud\source\repos\2.11\2.11\obj\Debug\net5.0\2.11.genruntimeconfig.cache

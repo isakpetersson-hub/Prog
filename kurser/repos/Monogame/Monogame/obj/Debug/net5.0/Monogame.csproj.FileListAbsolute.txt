@@ -1,0 +1,16 @@
+C:\Programmering\repos\Monogame\Monogame\bin\Debug\net5.0\Monogame.exe
+C:\Programmering\repos\Monogame\Monogame\bin\Debug\net5.0\Monogame.deps.json
+C:\Programmering\repos\Monogame\Monogame\bin\Debug\net5.0\Monogame.runtimeconfig.json
+C:\Programmering\repos\Monogame\Monogame\bin\Debug\net5.0\Monogame.runtimeconfig.dev.json
+C:\Programmering\repos\Monogame\Monogame\bin\Debug\net5.0\Monogame.dll
+C:\Programmering\repos\Monogame\Monogame\bin\Debug\net5.0\Monogame.pdb
+C:\Programmering\repos\Monogame\Monogame\obj\Debug\net5.0\Monogame.csproj.AssemblyReference.cache
+C:\Programmering\repos\Monogame\Monogame\obj\Debug\net5.0\Monogame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programmering\repos\Monogame\Monogame\obj\Debug\net5.0\Monogame.AssemblyInfoInputs.cache
+C:\Programmering\repos\Monogame\Monogame\obj\Debug\net5.0\Monogame.AssemblyInfo.cs
+C:\Programmering\repos\Monogame\Monogame\obj\Debug\net5.0\Monogame.csproj.CoreCompileInputs.cache
+C:\Programmering\repos\Monogame\Monogame\obj\Debug\net5.0\Monogame.dll
+C:\Programmering\repos\Monogame\Monogame\obj\Debug\net5.0\refint\Monogame.dll
+C:\Programmering\repos\Monogame\Monogame\obj\Debug\net5.0\Monogame.pdb
+C:\Programmering\repos\Monogame\Monogame\obj\Debug\net5.0\Monogame.genruntimeconfig.cache
+C:\Programmering\repos\Monogame\Monogame\obj\Debug\net5.0\ref\Monogame.dll

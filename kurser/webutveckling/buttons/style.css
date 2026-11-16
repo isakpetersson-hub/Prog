@@ -1,0 +1,14 @@
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+  background: #15DEA5;
+  padding: 1rem; }
+  .btn--disabled {
+    background: grey; }
+  .btn--outline {
+    background: transparent;
+    border: 2px solid #15DEA5; }
+    .btn--outline.btn--disabled {
+      border: 2px solid grey; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Programmering/repos/AdventureGame/Content/overworld.mp3</SourceFile>
+  <SourceTime>2023-02-15T13:46:14+01:00</SourceTime>
+  <DestFile>C:/Programmering/repos/AdventureGame/Content/bin/Windows/overworld.xnb</DestFile>
+  <DestTime>2024-08-29T15:06:12.9475019+02:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2022-07-26T13:44:56+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Programmering/repos/AdventureGame/Content/bin/Windows/overworld.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>

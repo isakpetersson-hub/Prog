@@ -1,0 +1,27 @@
+img {
+   width: 290px;
+   border: 2PX black solid;
+
+}
+
+p{
+   width: 200px;
+   border: 2PX black solid;
+   padding: 45px;
+
+}
+.lightblue{
+   background-color:lightblue;
+}
+.blue{
+   background-color: blue;
+   color: white;
+}
+.darkblue{
+   background-color: darkblue;
+   color: white;
+}
+.grey {
+   border: 10px grey solid;
+   width: 278px;
+}

@@ -1,0 +1,66 @@
+* {
+  font-family: sans-serif; }
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 300px 50px 600px;
+  grid-template-columns: 100%; }
+
+.top {
+  background-color: #43789f;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px; }
+
+.banner {
+  background-color: #212529; }
+
+.banner__link {
+  font-size: 20px;
+  padding: 10px; }
+
+.loggain {
+  margin-top: 100px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 45% 45% 10%;
+  margin-top: 100px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 45% 45% 10%; }
+
+.loggain__username {
+  height: 34px;
+  font-size: 20px;
+  width: 90%;
+  margin: 3px 0 15px 0;
+  padding: 7px 0px 7px 3px;
+  border: 1px solid black;
+  border-radius: 4px; }
+
+.loggain__username__label {
+  font-size: 26px; }
+
+.loggain__password {
+  height: 34px;
+  font-size: 20px;
+  width: 90%;
+  margin: 3px 0 15px 0;
+  padding: 7px 0px 7px 3px;
+  border: 1px solid black;
+  border-radius: 4px; }
+
+.loggain__password__label {
+  font-size: 26px;
+  font-size: 26px; }
+
+.loggain__submit {
+  width: 60%;
+  height: 40%;
+  border-radius: 4px;
+  justify-self: center;
+  align-self: center; }
+
+/*# sourceMappingURL=style.css.map */

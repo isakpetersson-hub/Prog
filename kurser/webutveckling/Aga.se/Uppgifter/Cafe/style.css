@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Signika:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Signika:wght@300&display=swap');
+Body{
+	background-color: #365162;
+	display: block;
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+h1{
+	color: darkgoldenrod;
+	font-family: 'Signika', sans-serif;
+  margin:auto;
+  padding: 10px;
+}
+p{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    color: darkgoldenrod;
+    font-weight: bold;		
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 700px;
+  text-align: left;
+  margin: auto;
+}
+
+table td, table th {
+  padding: 8px;
+  color: grey;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:nth-child(odd){background-color: lightgrey;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: grey;
+  color: black;
+}
+ul{
+	margin: auto;
+	width: 170px;
+	list-style-type: circle;
+	color: white;
+	font-size: 25px;
+	text-align: left;
+}
+
+.text{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+.TEXT{
+	color: darkgoldenrod;
+	padding: 0px;
+}
+.mail{
+	color: grey;
+	font-size: 15px;
+}
+a{
+	color: darkgoldenrod;
+	text-decoration: none;
+}
+.copy{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}

@@ -1,0 +1,80 @@
+body{
+	background-color: lightgray;
+}
+.main{
+	width: 62%;
+	margin: auto;
+  	font-family: sans-serif;
+}
+h1{
+	margin-left: 10px;
+  	background-color: transparent;
+}
+.top{
+	display: flex;
+	background-image: url('bilder/student_1200.png');
+ 	background-position: right;
+	width: 100%;
+	height: 300px;
+	flex-direction: column;
+	border-radius: 10px;
+  	box-shadow: 3px 3px 2px #888888;
+}
+.toptext{
+  	width: 33%;
+  	background-color: transparent;
+  	align-self: center;
+  	font-size: 30px;
+  	margin-top: 20px;
+  	margin-bottom: 0px;
+}
+.middle{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+img{
+	width: 100%;
+}
+.infobox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	background-color: white;
+	width: 150px;
+	padding: 20px;
+	height: 450px;
+	border-radius: 2px;
+  	box-shadow: 3px 3px 2px #888888;
+}
+.button{
+	margin-top: auto;
+	background-color: royalblue;
+	color: white;
+	width: 55px;
+	padding: 6px;
+	font-size: 15px;
+	border-radius: 5px;
+}
+.bottom{
+	display: flex;
+	background-color: white;
+	margin-top: 20px;
+	border-radius: 5px;
+	flex-direction: row;
+	justify-content: flex-start;
+  	box-shadow: 3px 3px 2px #888888;
+}
+.bottomtext{
+	padding-left: 10px;
+	width: 25%;
+}
+.bottomtextblue{
+	background-color: lightblue;
+	flex-grow: 1;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 16px;
+	width: 25%;
+}
